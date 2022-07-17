@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <link href="/img/favicon.ico" rel="shortcut icon">
+  <title>Components</title>
+  <link href="/css/styles.css" rel="stylesheet">
+  <link href=@@cssLink rel="stylesheet">
+</head>
+  <body>
+    <header class="header">
+  <div class="container">
+    <div class="template--header">
+      <div class="btn-components">
+        <span class="icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <span class="text">Components</span>
+      </div>
+      <div class="components-dropdown">
+        <ul class="components-menu">
+          <li><a href="./">Components list</a></li>
+          <li class="components-submenu">
+            <span>UI</span>
+            <ul class="components-submenu-list">
+              <li><a href="./style-guide.html">UI</a></li>
+              <li><a href="./accordion.html">Accordion</a></li>
+              <li><a href="./tabs.html">Tabs</a></li>
+              <li><a href="./countdown.html">Countdown</a></li>
+              <li><a href="./calendar.html">Calendar</a></li>
+              <li><a href="./preloader.html">Preloader</a></li>
+            </ul>
+          </li>
+          <li class="components-submenu">
+            <span>Home</span>
+            <ul class="components-submenu-list">
+              <li><a href="./headers.html">Header variants</a></li>
+              <li><a href="./products-slider.html">Product components</a></li>
+              <li><a href="./promo-slider.html">Promo slider components</a></li>
+              <li><a href="./seo.html">Seo text</a></li>
+            </ul>
+          </li>
+          <li class="components-submenu">
+            <span>Catalog</span>
+            <ul class="components-submenu-list">
+              <li><a href="./products-slider.html">Product components</a></li>
+              <li><a href="./filters.html">Filters</a></li>
+            </ul>
+          </li>
+          <li class="components-submenu">
+            <span>Product</span>
+            <ul class="components-submenu-list">
+              <li><a href="./products-slider.html">Product components</a></li>
+              <li><a href="./product-card.html">Product card</a></li>
+              <li><a href="./sticky-product-page.html">Sticky product</a></li>
+              <li><a href="./product-zoom.html">Product zoom</a></li>
+            </ul>
+          </li>
+          <li class="components-submenu">
+            <span>Cart</span>
+            <ul class="components-submenu-list">
+              <li><a href="./cart-page.html">Basket</a></li>
+            </ul>
+          </li>
+          <li class="components-submenu">
+            <span>Checkout</span>
+            <ul class="components-submenu-list">
+              <li><a href="./checkout.html">Checkout page</a></li>
+              <li><a href="./checkout-registered.html">Checkout registered user</a></li>
+              <li><a href="./checkout-thx.html">Checkout thx page</a></li>
+              <li><a href="./checkout-components.html">Checkout components page</a></li>
+            </ul>
+          </li>
+          <li class="components-submenu">
+            <span>Personal</span>
+            <ul class="components-submenu-list">
+              <li><a href="./personal-private.html">Personal private</a></li>
+              <li><a href="./personal-orders.html">Personal orders</a></li>
+              <li><a href="./personal-favorites.html">Personal favorites</a></li>
+            </ul>
+          </li>
+          <li class="components-submenu">
+            <span>Content</span>
+            <ul class="components-submenu-list">
+              <li><a href="./countdown.html">Countdown</a></li>
+              <li><a href="./calendar.html">Calendar</a></li>
+              <li><a href="./shops.html">Google map</a></li>
+              <li><a href="./blog.html">Blog page</a></li>
+              <li><a href="./article.html">Article page</a></li>
+              <li><a href="./content.html">Content pages</a></li>
+              <li><a href="./alphabet.html">Alphabet</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+      <div class="container">
+        <div class="section">
+          <div class="title-section">
+            <div class="h2">Calendar</div>
+          </div>
+          <div class="section-body">
+            <div class="select-date-wrap">
+              <div class="select-date">
+  <div class="date-selecting">
+    <label class="date-selecting-link">
+      <i class="icon-calendar"></i>
+      <input type="button" data-range='false' @@dataSeparator class="datetimepicker" data-value='15.01.2025'>
+    </label>
+  </div>
+  <a href="#" class="remove-date">
+    <svg>
+      <use xlink:href="#remove"></use>
+    </svg>
+  </a>
+</div>
+
+<div class="svg-sprite" style="display: none;">
+  <svg>
+    <g id="remove">
+      <path d="M1392.68,117a1.4,1.4,0,0,1,.18.126c0.34,0.344.69,0.69,1.03,1.036a0.277,0.277,0,0,1,.03.408,0.455,0.455,0,0,1-.08.085l-3.27,3.27a0.494,0.494,0,0,1-.08.062c0.04,0.04.06,0.064,0.08,0.087l3.27,3.277a0.534,0.534,0,0,1,.12.142,0.251,0.251,0,0,1-.05.332l-1.08,1.078a0.278,0.278,0,0,1-.4.026,0.441,0.441,0,0,1-.08-0.074l-3.27-3.27a0.781,0.781,0,0,1-.06-0.085c-0.04.036-.07,0.058-0.09,0.081l-3.27,3.277a1.294,1.294,0,0,1-.1.087,0.28,0.28,0,0,1-.38-0.038c-0.36-.357-0.71-0.715-1.07-1.072a0.27,0.27,0,0,1-.03-0.388,0.343,0.343,0,0,1,.09-0.1l3.27-3.275a0.641,0.641,0,0,1,.1-0.085,0.586,0.586,0,0,1-.1-0.059c-1.09-1.094-2.19-2.187-3.28-3.284a0.7,0.7,0,0,1-.14-0.237,0.186,0.186,0,0,1,.06-0.206c0.37-.38.75-0.759,1.13-1.137a0.493,0.493,0,0,1,.1-0.065h0.13a2.569,2.569,0,0,1,.26.2c1.08,1.076,2.15,2.155,3.23,3.233a0.285,0.285,0,0,1,.05.086c0.01,0,.03-0.009.04-0.013,0.02-.024.03-0.051,0.05-0.073,1.08-1.076,2.15-2.151,3.23-3.228a0.745,0.745,0,0,1,.28-0.206h0.1Z" transform="translate(-1384 -117)"/>
+    </g>
+  </svg>
+</div>
+            </div>
+            <br>
+            <p>data-range</p>
+            <div class="select-date-wrap">
+              <div class="select-date">
+  <div class="date-selecting">
+    <label class="date-selecting-link">
+      <i class="icon-calendar"></i>
+      <input type="button" data-range='true' data-multiple-dates-separator=' - ' class="datetimepicker" data-value='15.01.2025 - 25.01.2025'>
+    </label>
+  </div>
+  <a href="#" class="remove-date">
+    <svg>
+      <use xlink:href="#remove"></use>
+    </svg>
+  </a>
+</div>
+
+<div class="svg-sprite" style="display: none;">
+  <svg>
+    <g id="remove">
+      <path d="M1392.68,117a1.4,1.4,0,0,1,.18.126c0.34,0.344.69,0.69,1.03,1.036a0.277,0.277,0,0,1,.03.408,0.455,0.455,0,0,1-.08.085l-3.27,3.27a0.494,0.494,0,0,1-.08.062c0.04,0.04.06,0.064,0.08,0.087l3.27,3.277a0.534,0.534,0,0,1,.12.142,0.251,0.251,0,0,1-.05.332l-1.08,1.078a0.278,0.278,0,0,1-.4.026,0.441,0.441,0,0,1-.08-0.074l-3.27-3.27a0.781,0.781,0,0,1-.06-0.085c-0.04.036-.07,0.058-0.09,0.081l-3.27,3.277a1.294,1.294,0,0,1-.1.087,0.28,0.28,0,0,1-.38-0.038c-0.36-.357-0.71-0.715-1.07-1.072a0.27,0.27,0,0,1-.03-0.388,0.343,0.343,0,0,1,.09-0.1l3.27-3.275a0.641,0.641,0,0,1,.1-0.085,0.586,0.586,0,0,1-.1-0.059c-1.09-1.094-2.19-2.187-3.28-3.284a0.7,0.7,0,0,1-.14-0.237,0.186,0.186,0,0,1,.06-0.206c0.37-.38.75-0.759,1.13-1.137a0.493,0.493,0,0,1,.1-0.065h0.13a2.569,2.569,0,0,1,.26.2c1.08,1.076,2.15,2.155,3.23,3.233a0.285,0.285,0,0,1,.05.086c0.01,0,.03-0.009.04-0.013,0.02-.024.03-0.051,0.05-0.073,1.08-1.076,2.15-2.151,3.23-3.228a0.745,0.745,0,0,1,.28-0.206h0.1Z" transform="translate(-1384 -117)"/>
+    </g>
+  </svg>
+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <footer class="footer footer-template">
+  <div class="container">
+    
+  </div>
+</footer>
+<span class="back-to-top"><i class="icon-up"></i></span>
+<div class="bg"></div>
+<!-- modal container -->
+<div class="modal fade" id="modal-main" role="dialog" tabindex="-1"></div>
+<script src="/js/libs-min.js"></script>
+<script src="/js/script-min.js"></script>
+</html>

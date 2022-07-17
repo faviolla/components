@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <link href="/img/favicon.ico" rel="shortcut icon">
+  <title>Components</title>
+  <link href="/css/styles.css" rel="stylesheet">
+  <link href=@@cssLink rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+  <div class="container">
+    <div class="template--header">
+      <div class="btn-components">
+        <span class="icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <span class="text">Components</span>
+      </div>
+      <div class="components-dropdown">
+        <ul class="components-menu">
+          <li><a href="./">Components list</a></li>
+          <li class="components-submenu">
+            <span>UI</span>
+            <ul class="components-submenu-list">
+              <li><a href="./style-guide.html">UI</a></li>
+              <li><a href="./accordion.html">Accordion</a></li>
+              <li><a href="./tabs.html">Tabs</a></li>
+              <li><a href="./countdown.html">Countdown</a></li>
+              <li><a href="./calendar.html">Calendar</a></li>
+              <li><a href="./preloader.html">Preloader</a></li>
+            </ul>
+          </li>
+          <li class="components-submenu">
+            <span>Home</span>
+            <ul class="components-submenu-list">
+              <li><a href="./headers.html">Header variants</a></li>
+              <li><a href="./products-slider.html">Product components</a></li>
+              <li><a href="./promo-slider.html">Promo slider components</a></li>
+              <li><a href="./seo.html">Seo text</a></li>
+            </ul>
+          </li>
+          <li class="components-submenu">
+            <span>Catalog</span>
+            <ul class="components-submenu-list">
+              <li><a href="./products-slider.html">Product components</a></li>
+              <li><a href="./filters.html">Filters</a></li>
+            </ul>
+          </li>
+          <li class="components-submenu">
+            <span>Product</span>
+            <ul class="components-submenu-list">
+              <li><a href="./products-slider.html">Product components</a></li>
+              <li><a href="./product-card.html">Product card</a></li>
+              <li><a href="./sticky-product-page.html">Sticky product</a></li>
+              <li><a href="./product-zoom.html">Product zoom</a></li>
+            </ul>
+          </li>
+          <li class="components-submenu">
+            <span>Cart</span>
+            <ul class="components-submenu-list">
+              <li><a href="./cart-page.html">Basket</a></li>
+            </ul>
+          </li>
+          <li class="components-submenu">
+            <span>Checkout</span>
+            <ul class="components-submenu-list">
+              <li><a href="./checkout.html">Checkout page</a></li>
+              <li><a href="./checkout-registered.html">Checkout registered user</a></li>
+              <li><a href="./checkout-thx.html">Checkout thx page</a></li>
+              <li><a href="./checkout-components.html">Checkout components page</a></li>
+            </ul>
+          </li>
+          <li class="components-submenu">
+            <span>Personal</span>
+            <ul class="components-submenu-list">
+              <li><a href="./personal-private.html">Personal private</a></li>
+              <li><a href="./personal-orders.html">Personal orders</a></li>
+              <li><a href="./personal-favorites.html">Personal favorites</a></li>
+            </ul>
+          </li>
+          <li class="components-submenu">
+            <span>Content</span>
+            <ul class="components-submenu-list">
+              <li><a href="./countdown.html">Countdown</a></li>
+              <li><a href="./calendar.html">Calendar</a></li>
+              <li><a href="./shops.html">Google map</a></li>
+              <li><a href="./blog.html">Blog page</a></li>
+              <li><a href="./article.html">Article page</a></li>
+              <li><a href="./content.html">Content pages</a></li>
+              <li><a href="./alphabet.html">Alphabet</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <main class="main">
+    <div class="catalog">
+      <div class="catalog-section section">
+        <div class="container">
+          <div class="holder">
+            <div class="title-section">
+              <div class="h2">Фильтры - горизонтальное представление</div>
+            </div>
+            <div class="section-body">
+              <div class="catalog-container horizontal">
+                <div class="filter-panel">
+                  <div class="filter-panel__holder">
+                    <div class="filter">
+                      <div class="filter-item js-filter-box filter-item-price">
+                        <div class="filter-item__title js-filter-title">
+                          <span class="filter-item__title-name">Цена</span>
+                          <span class="filter-item__title-num"></span>
+                          <span class="filter-item__title-icon">
+                            <i class="icon-plus"></i>
+                          </span>
+                          <a href="" class="filter-clean">Очистить</a>
+                        </div>
+                        <div class="filter-item__info filter-item__info-price">
+                          <div class="filter-item__info-inner">
+                            <div class="filter-price">
+                              <div class="filter-price__param">
+                                <div class="filter-price__input-holder">
+                                  <div class="filter-price__container">
+                                    <input class="min-price filter-price__input" type="number" pattern="\d*" value="17459">
+                                  </div>
+                                </div>
+                                <span class="filter-price__icon">—</span> 
+                                <div class="filter-price__input-holder">
+                                  <div class="filter-price__container">
+                                    <input class="max-price filter-price__input" type="number" pattern="\d*" value="39580">
+                                  </div>
+                                </div>
+                              </div>
+                              <a href="" class="link">Применить</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="filter-item js-filter-box">
+                        <div class="filter-item__title js-filter-title">
+                          <span class="filter-item__title-name">Сезон</span>
+                          <span class="filter-item__title-num"></span>
+                          <span class="filter-item__title-icon"><i class="icon-plus"></i></span>
+                          <a href="" class="filter-clean">Очистить</a>
+                        </div>
+                        <div class="filter-item__info">
+                          <div class="filter-item__info-inner">
+                            <div class="filter-checkbox__holder">
+                              <a href="" class="filter-checkbox__link">
+                                <label class="filter-checkbox__label">
+                                  <input type="checkbox" class="filter-checkbox">
+                                  <span class="filter-param" title="Зима">Зима</span>
+                                </label>
+                              </a>
+                            </div>
+                            <div class="filter-checkbox__holder">
+                              <a href="" class="filter-checkbox__link">
+                                <label class="filter-checkbox__label">
+                                  <input type="checkbox" class="filter-checkbox">
+                                  <span class="filter-param" title="Лето">Лето</span>
+                                </label>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="filter-item js-filter-box">
+                        <div class="filter-item__title js-filter-title">
+                          <span class="filter-item__title-name">Серия</span>
+                          <span class="filter-item__title-num"></span>
+                          <span class="filter-item__title-icon"><i class="icon-plus"></i></span>
+                          <a href="" class="filter-clean">Очистить</a>
+                        </div>
+                        <div class="filter-item__info">
+                          <div class="filter-item__info-inner">
+                            <div class="filter-checkbox__holder">
+                              <a href="" class="filter-checkbox__link">
+                                <label class="filter-checkbox__label">
+                                  <input type="checkbox" class="filter-checkbox">
+                                  <span class="filter-param" title="Серия 1">Серия 1</span>
+                                </label>
+                              </a>
+                            </div>
+                            <div class="filter-checkbox__holder">
+                              <a href="" class="filter-checkbox__link">
+                                <label class="filter-checkbox__label">
+                                  <input type="checkbox" class="filter-checkbox">
+                                  <span class="filter-param" title="Серия 2">Серия 2</span>
+                                </label>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="filter-item js-filter-box">
+                        <div class="filter-item__title filter-item__title-selected js-filter-title">
+                          <span class="filter-item__title-name">Длина</span>
+                          <span class="filter-item__title-num">(2)</span>
+                          <span class="filter-item__title-icon"><i class="icon-plus"></i></span>
+                          <a href="" class="filter-clean">Очистить</a>
+                        </div>
+                        <div class="filter-item__info">
+                          <div class="filter-item__info-inner">
+                            <div class="filter-checkbox__holder">
+                              <a href="" class="filter-checkbox__link">
+                                <label class="filter-checkbox__label">
+                                  <input type="checkbox" class="filter-checkbox">
+                                  <span class="filter-param" title="84 см">84 см</span>
+                                </label>
+                              </a>
+                            </div>
+                            <div class="filter-checkbox__holder">
+                              <a href="" class="filter-checkbox__link">
+                                <label class="filter-checkbox__label">
+                                  <input type="checkbox" class="filter-checkbox">
+                                  <span class="filter-param" title="105 см">105 см</span>
+                                </label>
+                              </a>
+                            </div>
+                            <div class="filter-checkbox__holder">
+                              <a href="" class="filter-checkbox__link">
+                                <label class="filter-checkbox__label">
+                                  <input type="checkbox" class="filter-checkbox" checked>
+                                  <span class="filter-param" title="118 см">118 см</span>
+                                </label>
+                              </a>
+                            </div>
+                            <div class="filter-checkbox__holder">
+                              <a href="" class="filter-checkbox__link">
+                                <label class="filter-checkbox__label">
+                                  <input type="checkbox" class="filter-checkbox">
+                                  <span class="filter-param" title="121 см">121 см</span>
+                                </label>
+                              </a>
+                            </div>
+                            <div class="filter-checkbox__holder">
+                              <a href="" class="filter-checkbox__link">
+                                <label class="filter-checkbox__label">
+                                  <input type="checkbox" class="filter-checkbox" checked>
+                                  <span class="filter-param" title="127 см">127 см</span>
+                                </label>
+                              </a>
+                            </div>
+                            <div class="filter-checkbox__holder">
+                              <a href="" class="filter-checkbox__link">
+                                <label class="filter-checkbox__label">
+                                  <input type="checkbox" class="filter-checkbox">
+                                  <span class="filter-param" title="136 см">136 см</span>
+                                </label>
+                              </a>
+                            </div>
+                            <div class="filter-checkbox__holder">
+                              <a href="" class="filter-checkbox__link">
+                                <label class="filter-checkbox__label">
+                                  <input type="checkbox" class="filter-checkbox">
+                                  <span class="filter-param" title="137 см">137 см</span>
+                                </label>
+                              </a>
+                            </div>
+                            <div class="filter-checkbox__holder">
+                              <a href="" class="filter-checkbox__link">
+                                <label class="filter-checkbox__label">
+                                  <input type="checkbox" class="filter-checkbox">
+                                  <span class="filter-param" title="139 см">139 см</span>
+                                </label>
+                              </a>
+                            </div>
+                            <div class="filter-checkbox__holder">
+                              <a href="" class="filter-checkbox__link">
+                                <label class="filter-checkbox__label">
+                                  <input type="checkbox" class="filter-checkbox">
+                                  <span class="filter-param" title="141 см">141 см</span>
+                                </label>
+                              </a>
+                            </div>
+                            <div class="filter-checkbox__holder">
+                              <a href="" class="filter-checkbox__link">
+                                <label class="filter-checkbox__label">
+                                  <input type="checkbox" class="filter-checkbox">
+                                  <span class="filter-param" title="144 см">144 см</span>
+                                </label>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="filter-item js-filter-box">
+                        <div class="filter-item__title js-filter-title filter-item__title-selected">
+                          <span class="filter-item__title-name">Цвет</span>
+                          <span class="filter-item__title-num">(3)</span>
+                          <span class="filter-item__title-icon"><i class="icon-plus"></i></span>
+                          <a href="" class="filter-clean">Очистить</a>
+                        </div>
+                        <div class="filter-item__info">
+                          <div class="filter-item__info-inner">
+                            <div class="filter-checkbox__holder">
+                              <a href="" class="filter-checkbox__link">
+                                <label class="filter-checkbox__label">
+                                  <input type="checkbox" class="filter-checkbox">
+                                  <span class="filter-param__color" style="background-color: #FAFAFA; border: 1px solid #F2F2F2;"></span>
+                                  <span class="filter-param" title="белый">белый</span>
+                                </label>
+                              </a>
+                            </div>
+                            <div class="filter-checkbox__holder">
+                              <a href="" class="filter-checkbox__link">
+                                <label class="filter-checkbox__label">
+                                  <input type="checkbox" class="filter-checkbox" checked>
+                                  <span class="filter-param__color" style="background-color: #F6F3F1;"></span>
+                                  <span class="filter-param" title="бежевый">бежевый</span>
+                                </label>
+                              </a>
+                            </div>
+                            <div class="filter-checkbox__holder">
+                              <a href="" class="filter-checkbox__link">
+                                <label class="filter-checkbox__label">
+                                  <input type="checkbox" class="filter-checkbox" checked>
+                                  <span class="filter-param__color" style="background-color: #EB5757;"></span>
+                                  <span class="filter-param" title="красный">красный</span>
+                                </label>
+                              </a>
+                            </div>
+                            <div class="filter-checkbox__holder">
+                              <a href="" class="filter-checkbox__link">
+                                <label class="filter-checkbox__label">
+                                  <input type="checkbox" class="filter-checkbox">
+                                  <span class="filter-param__color" style="background-color: #F873AF;"></span>
+                                  <span class="filter-param" title="розовый">розовый</span>
+                                </label>
+                              </a>
+                            </div>
+                            <div class="filter-checkbox__holder">
+                              <a href="" class="filter-checkbox__link">
+                                <label class="filter-checkbox__label">
+                                  <input type="checkbox" class="filter-checkbox">
+                                  <span class="filter-param__color" style="background-color: #BB6BD9;"></span>
+                                  <span class="filter-param" title="фиолетовый">фиолетовый</span>
+                                </label>
+                              </a>
+                            </div>
+                            <div class="filter-checkbox__holder">
+                              <a href="" class="filter-checkbox__link">
+                                <label class="filter-checkbox__label">
+                                  <input type="checkbox" class="filter-checkbox" checked>
+                                  <span class="filter-param__color" style="background-color: #F2C94C;"></span>
+                                  <span class="filter-param" title="жёлтый">жёлтый</span>
+                                </label>
+                              </a>
+                            </div>
+                            <div class="filter-checkbox__holder">
+                              <a href="" class="filter-checkbox__link">
+                                <label class="filter-checkbox__label">
+                                  <input type="checkbox" class="filter-checkbox">
+                                  <span class="filter-param__color" style="background-color: #2F80ED;"></span>
+                                  <span class="filter-param" title="синий">синий</span>
+                                </label>
+                              </a>
+                            </div>
+                            <div class="filter-checkbox__holder">
+                              <a href="" class="filter-checkbox__link">
+                                <label class="filter-checkbox__label">
+                                  <input type="checkbox" class="filter-checkbox">
+                                  <span class="filter-param__color" style="background-color: #173835;"></span>
+                                  <span class="filter-param" title="зеленый">зеленый</span>
+                                </label>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="filter-item js-filter-box">
+                        <div class="filter-item__title js-filter-title">
+                          <span class="filter-item__title-name">Тип</span>
+                          <span class="filter-item__title-num"></span>
+                          <span class="filter-item__title-icon"><i class="icon-plus"></i></span>
+                          <a href="" class="filter-clean">Очистить</a>
+                        </div>
+                        <div class="filter-item__info">
+                          <div class="filter-item__info-inner">
+                            <div class="filter-checkbox__holder">
+                              <a href="" class="filter-checkbox__link">
+                                <label class="filter-checkbox__label">
+                                  <input type="checkbox" class="filter-checkbox">
+                                  <span class="filter-param" title="Тип 1">Тип 1</span>
+                                </label>
+                              </a>
+                            </div>
+                            <div class="filter-checkbox__holder">
+                              <a href="" class="filter-checkbox__link">
+                                <label class="filter-checkbox__label">
+                                  <input type="checkbox" class="filter-checkbox">
+                                  <span class="filter-param" title="Тип 2">Тип 2</span>
+                                </label>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter-selected">
+                      <span class="filter-title hide-desktop">Фильтры</span>
+                      <ul class="filter-selected__list">
+                        <li class="filter-selected__item hide-mobile  filter-selected__title-holder">
+                          <span class="filter-selected__title">Вы выбрали:</span>
+                        </li>
+                        <li class="filter-selected__item">
+                          <a href="" class="filter-selected__link">
+                            <span>Thule Sleek</span>
+                            <i class="icon-close-filter"></i>
+                          </a>
+                        </li>
+                        <li class="filter-selected__item">
+                          <a href="" class="filter-selected__link">
+                            <span>Thule Glide2</span>
+                            <i class="icon-close-filter"></i>
+                          </a>
+                        </li>
+                        <li class="filter-selected__item filter-clean__link">
+                          <a href="" class="filter-selected__clean link">Очистить</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="filter-apply">
+                      <a href="" class="btn btn-lg btn-primary btn-block">
+                        <span class="filter-apply__text">Применить</span>
+                        <span class="filter-apply__num">(345)</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="filter-btn__mobile js-filter-toggle">
+                    <div class="filter-btn">
+                      <span>Фильтры</span>
+                      <i class="icon-plus"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-list__section">
+                  <div class="product-list">
+                    <div class="product-item">
+  <div class="product-img">
+    <div class="product-label lbl-stock"><span>Акция</span></div>
+    <span class="favorite active">
+      <i class="icon-favorite"></i>
+    </span>
+    <a href="">
+      <img src="/img/products/product-01.jpg" alt="product">
+    </a>
+  </div>
+  <div class="product-info">
+    <div class="product-available available">
+      <i class="icon-available"></i>
+      <span>в наличии</span>
+    </div>
+    <div class="product-name">
+      <a href="">POPSODA чемодан 45 см blac</a>
+    </div>
+    <div class="product-price">
+      <div class="price">
+        <div class="price-current">19 449 грн</div>
+      </div>
+    </div>
+    <div class="product-btn" >
+      <a href="" class="btn btn-primary btn-block" data-openmodal="modals/basket.html">В корзину</a>
+    </div>
+  </div>
+</div>
+                    <div class="product-item">
+  <div class="product-img">
+    <span class="favorite">
+      <i class="icon-favorite"></i>
+    </span>
+    <a href="">
+      <img src="/img/products/product-02.jpg" alt="product">
+    </a>
+  </div>
+  <div class="product-info">
+    <div class="product-available available">
+      <i class="icon-available"></i>
+      <span>в наличии</span>
+    </div>
+    <div class="product-name">
+      <a href="">NEOPULSE X DIESEL чемодан 55см. black/yellow</a>
+    </div>
+    <div class="product-price">
+      <div class="price">
+        <div class="price-old">
+          <span>12 292</span>
+        </div>
+        <div class="price-current">10 099 грн</div>
+      </div>
+    </div>
+    <div class="product-btn">
+      <a href="" class="btn btn-primary btn-block">В корзину</a>
+    </div>
+  </div>
+</div>
+                    <div class="product-item">
+  <div class="product-img">
+    <div class="product-label lbl-stock"><span>Акция</span></div>
+    <span class="favorite active">
+      <i class="icon-favorite"></i>
+    </span>
+    <a href="">
+      <img src="/img/products/product-01.jpg" alt="product">
+    </a>
+  </div>
+  <div class="product-info">
+    <div class="product-available available">
+      <i class="icon-available"></i>
+      <span>в наличии</span>
+    </div>
+    <div class="product-name">
+      <a href="">POPSODA чемодан 45 см blac</a>
+    </div>
+    <div class="product-price">
+      <div class="price">
+        <div class="price-current">19 449 грн</div>
+      </div>
+    </div>
+    <div class="product-btn" >
+      <a href="" class="btn btn-primary btn-block" data-openmodal="modals/basket.html">В корзину</a>
+    </div>
+  </div>
+</div>
+                    <div class="product-item">
+  <div class="product-img">
+    <span class="favorite">
+      <i class="icon-favorite"></i>
+    </span>
+    <a href="">
+      <img src="/img/products/product-02.jpg" alt="product">
+    </a>
+  </div>
+  <div class="product-info">
+    <div class="product-available available">
+      <i class="icon-available"></i>
+      <span>в наличии</span>
+    </div>
+    <div class="product-name">
+      <a href="">NEOPULSE X DIESEL чемодан 55см. black/yellow</a>
+    </div>
+    <div class="product-price">
+      <div class="price">
+        <div class="price-old">
+          <span>12 292</span>
+        </div>
+        <div class="price-current">10 099 грн</div>
+      </div>
+    </div>
+    <div class="product-btn">
+      <a href="" class="btn btn-primary btn-block">В корзину</a>
+    </div>
+  </div>
+</div>
+                    <div class="product-item">
+  <div class="product-img">
+    <div class="product-label lbl-stock"><span>Акция</span></div>
+    <span class="favorite active">
+      <i class="icon-favorite"></i>
+    </span>
+    <a href="">
+      <img src="/img/products/product-01.jpg" alt="product">
+    </a>
+  </div>
+  <div class="product-info">
+    <div class="product-available available">
+      <i class="icon-available"></i>
+      <span>в наличии</span>
+    </div>
+    <div class="product-name">
+      <a href="">POPSODA чемодан 45 см blac</a>
+    </div>
+    <div class="product-price">
+      <div class="price">
+        <div class="price-current">19 449 грн</div>
+      </div>
+    </div>
+    <div class="product-btn" >
+      <a href="" class="btn btn-primary btn-block" data-openmodal="modals/basket.html">В корзину</a>
+    </div>
+  </div>
+</div>
+                    <div class="product-item">
+  <div class="product-img">
+    <span class="favorite">
+      <i class="icon-favorite"></i>
+    </span>
+    <a href="">
+      <img src="/img/products/product-02.jpg" alt="product">
+    </a>
+  </div>
+  <div class="product-info">
+    <div class="product-available available">
+      <i class="icon-available"></i>
+      <span>в наличии</span>
+    </div>
+    <div class="product-name">
+      <a href="">NEOPULSE X DIESEL чемодан 55см. black/yellow</a>
+    </div>
+    <div class="product-price">
+      <div class="price">
+        <div class="price-old">
+          <span>12 292</span>
+        </div>
+        <div class="price-current">10 099 грн</div>
+      </div>
+    </div>
+    <div class="product-btn">
+      <a href="" class="btn btn-primary btn-block">В корзину</a>
+    </div>
+  </div>
+</div>
+                    <div class="product-item">
+  <div class="product-img">
+    <span class="favorite">
+      <i class="icon-favorite"></i>
+    </span>
+    <a href="">
+      <img src="/img/products/product-02.jpg" alt="product">
+    </a>
+  </div>
+  <div class="product-info">
+    <div class="product-available available">
+      <i class="icon-available"></i>
+      <span>в наличии</span>
+    </div>
+    <div class="product-name">
+      <a href="">NEOPULSE X DIESEL чемодан 55см. black/yellow</a>
+    </div>
+    <div class="product-price">
+      <div class="price">
+        <div class="price-old">
+          <span>12 292</span>
+        </div>
+        <div class="price-current">10 099 грн</div>
+      </div>
+    </div>
+    <div class="product-btn">
+      <a href="" class="btn btn-primary btn-block">В корзину</a>
+    </div>
+  </div>
+</div>
+                    <div class="product-item">
+  <div class="product-img">
+    <span class="favorite">
+      <i class="icon-favorite"></i>
+    </span>
+    <a href="">
+      <img src="/img/products/product-02.jpg" alt="product">
+    </a>
+  </div>
+  <div class="product-info">
+    <div class="product-available available">
+      <i class="icon-available"></i>
+      <span>в наличии</span>
+    </div>
+    <div class="product-name">
+      <a href="">NEOPULSE X DIESEL чемодан 55см. black/yellow</a>
+    </div>
+    <div class="product-price">
+      <div class="price">
+        <div class="price-old">
+          <span>12 292</span>
+        </div>
+        <div class="price-current">10 099 грн</div>
+      </div>
+    </div>
+    <div class="product-btn">
+      <a href="" class="btn btn-primary btn-block">В корзину</a>
+    </div>
+  </div>
+</div>
+                  </div>
+                  <div class="pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer footer-template">
+  <div class="container">
+    
+  </div>
+</footer>
+<span class="back-to-top"><i class="icon-up"></i></span>
+<div class="bg"></div>
+<!-- modal container -->
+<div class="modal fade" id="modal-main" role="dialog" tabindex="-1"></div>
+<script src="/js/libs-min.js"></script>
+<script src="/js/script-min.js"></script>
+</body>
+</html>

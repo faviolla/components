@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <link href="/img/favicon.ico" rel="shortcut icon">
+  <title>Components</title>
+  <link href="/css/styles.css" rel="stylesheet">
+  <link href=@@cssLink rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="template--header">
+        <div class="btn-components">
+          <span class="icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <span class="text">Components</span>
+        </div>
+        <div class="components-dropdown">
+          <ul class="components-menu">
+            <li><a href="./">Components list</a></li>
+            <li class="components-submenu">
+              <span>UI</span>
+              <ul class="components-submenu-list">
+                <li><a href="./style-guide.html">UI</a></li>
+                <li><a href="./accordion.html">Accordion</a></li>
+                <li><a href="./tabs.html">Tabs</a></li>
+                <li><a href="./countdown.html">Countdown</a></li>
+                <li><a href="./calendar.html">Calendar</a></li>
+                <li><a href="./preloader.html">Preloader</a></li>
+              </ul>
+            </li>
+            <li class="components-submenu">
+              <span>Home</span>
+              <ul class="components-submenu-list">
+                <li><a href="./headers.html">Header variants</a></li>
+                <li><a href="./products-slider.html">Product components</a></li>
+                <li><a href="./promo-slider.html">Promo slider components</a></li>
+                <li><a href="./seo.html">Seo text</a></li>
+              </ul>
+            </li>
+            <li class="components-submenu">
+              <span>Catalog</span>
+              <ul class="components-submenu-list">
+                <li><a href="./products-slider.html">Product components</a></li>
+                <li><a href="./filters.html">Filters</a></li>
+              </ul>
+            </li>
+            <li class="components-submenu">
+              <span>Product</span>
+              <ul class="components-submenu-list">
+                <li><a href="./products-slider.html">Product components</a></li>
+                <li><a href="./product-card.html">Product card</a></li>
+                <li><a href="./sticky-product-page.html">Sticky product</a></li>
+                <li><a href="./product-zoom.html">Product zoom</a></li>
+              </ul>
+            </li>
+            <li class="components-submenu">
+              <span>Cart</span>
+              <ul class="components-submenu-list">
+                <li><a href="./cart-page.html">Basket</a></li>
+              </ul>
+            </li>
+            <li class="components-submenu">
+              <span>Checkout</span>
+              <ul class="components-submenu-list">
+                <li><a href="./checkout.html">Checkout page</a></li>
+                <li><a href="./checkout-registered.html">Checkout registered user</a></li>
+                <li><a href="./checkout-thx.html">Checkout thx page</a></li>
+                <li><a href="./checkout-components.html">Checkout components page</a></li>
+              </ul>
+            </li>
+            <li class="components-submenu">
+              <span>Personal</span>
+              <ul class="components-submenu-list">
+                <li><a href="./personal-private.html">Personal private</a></li>
+                <li><a href="./personal-orders.html">Personal orders</a></li>
+                <li><a href="./personal-favorites.html">Personal favorites</a></li>
+              </ul>
+            </li>
+            <li class="components-submenu">
+              <span>Content</span>
+              <ul class="components-submenu-list">
+                <li><a href="./countdown.html">Countdown</a></li>
+                <li><a href="./calendar.html">Calendar</a></li>
+                <li><a href="./shops.html">Google map</a></li>
+                <li><a href="./blog.html">Blog page</a></li>
+                <li><a href="./article.html">Article page</a></li>
+                <li><a href="./content.html">Content pages</a></li>
+                <li><a href="./alphabet.html">Alphabet</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <div class="shops-section tab-holder">
+        <div class="shops-controls tab-controls">
+          <a href="" class="active" data-tab="data-list">Список</a>
+          <a href="" data-tab="data-map">На карте</a>
+        </div>
+        <div class="tab-content-section">
+          <div class="tab-content list-content active" data-content="data-list">
+            <div class="address-section">
+              <div class="title-h2">Кофейни</div>
+              <div class="address__list">
+                <div class="address__item" data-gmaps-s="49.8380786" data-gmaps-n="36.6849671" data-phone="063 521 62 12" data-schedule="Пн-Нд (8:00-22:00)" data-address="г. Чугуев, ул. Жадановского, 1">
+                  <address class="contact-address">г. Чугуев, ул. Жадановского, 1</address>
+                  <div class="address__contact">
+                    <div class="address__phone">
+                      <i class="icon-address-phone"></i>
+                      <a href="tel:0635216212">063 521 62 12</a>
+                    </div>
+                    <div class="address__time">
+                      <i class="icon-address-time"></i>
+                      <span>Пн-Нд (8:00-22:00)</span>
+                    </div>
+                  </div>
+                  <a href="#map" onclick="goToGmaps(this);" class="js-map link">На карте</a>
+                </div>
+                <div class="address__item" data-gmaps-s="49.9447421" data-gmaps-n="36.3976619" data-phone="063 521 62 12" data-schedule="Пн-Нд (8:00-22:00)" data-address="г. Харьков, Московский проспект 274" data-subway="Индустриальная" data-place="Новый рынок, 3 ряд, магазин 6.12">
+                  <address class="contact-address">г. Харьков, Московский проспект 274</address>
+                  <div class="subway">
+                    <i class="icon-subway"></i>
+                    <span>Индустриальная</span>
+                  </div>
+                  <div class="address__descr">Новый рынок, 3 ряд, магазин 6.12</div>
+                  <div class="address__contact">
+                    <div class="address__phone">
+                      <i class="icon-address-phone"></i>
+                      <a href="tel:0635216212">063 521 62 12</a>
+                    </div>
+                    <div class="address__time">
+                      <i class="icon-address-time"></i>
+                      <span>Пн-Нд (8:00-22:00)</span>
+                    </div>
+                  </div>
+                  <a href="#map" onclick="goToGmaps(this);" class="js-map link">На карте</a>
+                </div>
+              </div>
+              <div class="title-h2">Торговые точки</div>
+              <div class="address__list">
+                <div class="address__item" data-gmaps-s="49.8357939" data-gmaps-n="36.687041" data-phone="063 521 62 12" data-schedule="Пн-Нд (8:00-22:00)" data-address="г. Чугуев, ул. Староникольская, 30">
+                  <address class="contact-address">г. Чугуев, ул. Староникольская, 30</address>
+                  <div class="address__contact">
+                    <div class="address__phone">
+                      <i class="icon-address-phone"></i>
+                      <a href="tel:0635216212">063 521 62 12</a>
+                    </div>
+                    <div class="address__time">
+                      <i class="icon-address-time"></i>
+                      <span>Пн-Нд (8:00-22:00)</span>
+                    </div>
+                  </div>
+                  <a href="#map" onclick="goToGmaps(this);" class="js-map link">На карте</a>
+                </div>
+                <div class="address__item" data-gmaps-s="49.9934582" data-gmaps-n="36.219625" data-phone="063 521 62 12" data-schedule="Пн-Нд (8:00-22:00)" data-address="г. Харьков, ул. Рождественская, 33" data-subway="Центральный рынок" data-place="Здание крытого рынка, торговое место 10">
+                  <address class="contact-address">г. Харьков, ул. Рождественская, 33</address>
+                  <div class="subway">
+                    <i class="icon-subway"></i>
+                    <span>Центральный рынок</span>
+                  </div>
+                  <div class="address__descr">Здание крытого рынка, торговое 
+                    место 10</div>
+                  <div class="address__contact">
+                    <div class="address__phone">
+                      <i class="icon-address-phone"></i>
+                      <a href="tel:063521 6212">063 521 62 12</a>
+                    </div>
+                    <div class="address__time">
+                      <i class="icon-address-time"></i>
+                      <span>Пн-Нд (8:00-22:00)</span>
+                    </div>
+                  </div>
+                  <a href="#map" onclick="goToGmaps(this);" class="js-map link">На карте</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content map-content" data-content="data-map">
+            <div class="map-section">
+              <div id="map" class="map multiple-map"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script
+    src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+  <script async defer 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0DxMMYRhqIFoFb4io4uzMqOk29kSaNso&amp;callback=initMap"></script>
+  <footer class="footer footer-template">
+    <div class="container">
+      
+    </div>
+  </footer>
+  <span class="back-to-top"><i class="icon-up"></i></span>
+  <div class="bg"></div>
+  <!-- modal container -->
+  <div class="modal fade" id="modal-main" role="dialog" tabindex="-1"></div>
+  <script src="/js/libs-min.js"></script>
+  <script src="/js/script-min.js"></script>
+</body>
+</html>

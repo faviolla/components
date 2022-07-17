@@ -24,3 +24,6 @@ $ gulp
 ```
 
 Navigate to `localhost:3000` in browser and you should see `index.html` open, as the server runs in the background.
+
+
+[Demo](https://faviolla.github.io/components/build/pages/index.html)
