@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+//= templates/head.html
+<body>
+  //= templates/header.html
+  <main class="main">
+    <div class="container">
+      <div class="shops-section tab-holder">
+        <div class="shops-controls tab-controls">
+          <a href="" class="active" data-tab="data-list">Список</a>
+          <a href="" data-tab="data-map">На карте</a>
+        </div>
+        <div class="tab-content-section">
+          <div class="tab-content list-content active" data-content="data-list">
+            <div class="address-section">
+              <div class="title-h2">Кофейни</div>
+              <div class="address__list">
+                <div class="address__item" data-gmaps-s="49.8380786" data-gmaps-n="36.6849671" data-phone="063 521 62 12" data-schedule="Пн-Нд (8:00-22:00)" data-address="г. Чугуев, ул. Жадановского, 1">
+                  <address class="contact-address">г. Чугуев, ул. Жадановского, 1</address>
+                  <div class="address__contact">
+                    <div class="address__phone">
+                      <i class="icon-address-phone"></i>
+                      <a href="tel:0635216212">063 521 62 12</a>
+                    </div>
+                    <div class="address__time">
+                      <i class="icon-address-time"></i>
+                      <span>Пн-Нд (8:00-22:00)</span>
+                    </div>
+                  </div>
+                  <a href="#map" onclick="goToGmaps(this);" class="js-map link">На карте</a>
+                </div>
+                <div class="address__item" data-gmaps-s="49.9447421" data-gmaps-n="36.3976619" data-phone="063 521 62 12" data-schedule="Пн-Нд (8:00-22:00)" data-address="г. Харьков, Московский проспект 274" data-subway="Индустриальная" data-place="Новый рынок, 3 ряд, магазин 6.12">
+                  <address class="contact-address">г. Харьков, Московский проспект 274</address>
+                  <div class="subway">
+                    <i class="icon-subway"></i>
+                    <span>Индустриальная</span>
+                  </div>
+                  <div class="address__descr">Новый рынок, 3 ряд, магазин 6.12</div>
+                  <div class="address__contact">
+                    <div class="address__phone">
+                      <i class="icon-address-phone"></i>
+                      <a href="tel:0635216212">063 521 62 12</a>
+                    </div>
+                    <div class="address__time">
+                      <i class="icon-address-time"></i>
+                      <span>Пн-Нд (8:00-22:00)</span>
+                    </div>
+                  </div>
+                  <a href="#map" onclick="goToGmaps(this);" class="js-map link">На карте</a>
+                </div>
+              </div>
+              <div class="title-h2">Торговые точки</div>
+              <div class="address__list">
+                <div class="address__item" data-gmaps-s="49.8357939" data-gmaps-n="36.687041" data-phone="063 521 62 12" data-schedule="Пн-Нд (8:00-22:00)" data-address="г. Чугуев, ул. Староникольская, 30">
+                  <address class="contact-address">г. Чугуев, ул. Староникольская, 30</address>
+                  <div class="address__contact">
+                    <div class="address__phone">
+                      <i class="icon-address-phone"></i>
+                      <a href="tel:0635216212">063 521 62 12</a>
+                    </div>
+                    <div class="address__time">
+                      <i class="icon-address-time"></i>
+                      <span>Пн-Нд (8:00-22:00)</span>
+                    </div>
+                  </div>
+                  <a href="#map" onclick="goToGmaps(this);" class="js-map link">На карте</a>
+                </div>
+                <div class="address__item" data-gmaps-s="49.9934582" data-gmaps-n="36.219625" data-phone="063 521 62 12" data-schedule="Пн-Нд (8:00-22:00)" data-address="г. Харьков, ул. Рождественская, 33" data-subway="Центральный рынок" data-place="Здание крытого рынка, торговое место 10">
+                  <address class="contact-address">г. Харьков, ул. Рождественская, 33</address>
+                  <div class="subway">
+                    <i class="icon-subway"></i>
+                    <span>Центральный рынок</span>
+                  </div>
+                  <div class="address__descr">Здание крытого рынка, торговое 
+                    место 10</div>
+                  <div class="address__contact">
+                    <div class="address__phone">
+                      <i class="icon-address-phone"></i>
+                      <a href="tel:063521 6212">063 521 62 12</a>
+                    </div>
+                    <div class="address__time">
+                      <i class="icon-address-time"></i>
+                      <span>Пн-Нд (8:00-22:00)</span>
+                    </div>
+                  </div>
+                  <a href="#map" onclick="goToGmaps(this);" class="js-map link">На карте</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content map-content" data-content="data-map">
+            <div class="map-section">
+              <div id="map" class="map multiple-map"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script
+    src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+  <script async defer 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0DxMMYRhqIFoFb4io4uzMqOk29kSaNso&amp;callback=initMap"></script>
+  //= templates/footer-template.html
+</body>
+</html>

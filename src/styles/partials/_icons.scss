@@ -1,0 +1,153 @@
+i[class^="icon-"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+.icon {
+  &-user {
+    background-image: url("../img/icons/ic-user.svg");
+    width: 21px;
+    height: 21px;
+  }
+  &-location {
+    background-image: url("../img/icons/ic-location.svg");
+    width: 20px;
+    height: 21px;
+  }
+  &-search {
+    background-image: url("../img/icons/ic-search.svg");
+    width: 24px;
+    height: 24px;
+  }
+  &-favorite {
+    background-image: url("../img/icons/ic-favorite.svg");
+    width: 24px;
+    height: 24px;
+  }
+  &-basket {
+    background-image: url("../img/icons/ic-basket.svg");
+    width: 24px;
+    height: 24px;
+  }
+  &-available {
+    background-image: url("../img/icons/ic-available.svg");
+    width: 12px;
+    height: 9px;
+  }
+  &-unavailable {
+    background-image: url("../img/icons/ic-unavailable.svg");
+    width: 16px;
+    height: 16px;
+  }
+  &-arrow {
+    background-image: url("../img/icons/ic-arrow.svg");
+    width: 25px;
+    height: 24px;
+    &-pagination {
+      background-image: url("../img/icons/ic-arrow-pagination.svg");
+      width: 24px;
+      height: 24px;
+    }
+  }
+  &-up {
+    background-image: url('../img/icons/ic-arrow-pagination.svg');
+    width: 24px;
+    height: 24px;
+    transform: rotate(-90deg);
+  }
+  &-fb {
+    background-image: url("../img/icons/ic-facebook.svg");
+    width: 20px;
+    height: 20px;
+  }
+  &-google {
+    background-image: url("../img/icons/ic-google.svg");
+    width: 17px;
+    height: 17px;
+  }
+  &-twitter {
+    background-image: url("../img/icons/ic-twitter.svg");
+    width: 17px;
+    height: 17px;
+  }
+  &-eye {
+    background-image: url("../img/icons/ic-eye.svg");
+    width: 24px;
+    height: 24px;
+  }
+  &-plus {
+    background-image: url("../img/icons/ic-plus.svg");
+    width: 24px;
+    height: 24px;
+  }
+  &-minus {
+    background-image: url("../img/icons/ic-minus.svg");
+    width: 24px;
+    height: 24px;
+  }
+  &-status {
+    &-new {
+      background-image: url("../img/icons/ic-status-new.svg");
+      width: 24px;
+      height: 24px;
+    }
+    &-wait {
+      background-image: url("../img/icons/ic-status-wait.svg");
+      width: 24px;
+      height: 24px;
+    }
+    &-done {
+      background-image: url("../img/icons/ic-status-done.svg");
+      width: 24px;
+      height: 24px;
+    }
+    &-cancel {
+      background-image: url("../img/icons/ic-status-cancel.svg");
+      width: 24px;
+      height: 24px;
+    }
+  }
+  &-close {
+    background-image: url("../img/icons/ic-close.svg");
+    width: 24px;
+    height: 24px;
+    &-basket {
+      background-image: url("../img/icons/ic-close-basket.svg");
+      width: 24px;
+      height: 24px;
+    }
+    &-sm {
+      background-image: url("../img/icons/ic-close-sm.svg");
+      width: 24px;
+      height: 24px;
+    }
+  }
+  &-comment {
+    background-image: url("../img/icons/ic-comment.svg");
+    width: 24px;
+    height: 24px;
+  }
+  &-delivery {
+    background-image: url("../img/icons/ic-delivery.svg");
+    width: 24px;
+    height: 24px;
+  }
+  &-pay {
+    background-image: url("../img/icons/ic-pay.svg");
+    width: 24px;
+    height: 24px;
+  }
+  &-exchange {
+    background-image: url("../img/icons/ic-exchange.svg");
+    width: 24px;
+    height: 24px;
+  }
+  &-plus-product {
+    background-image: url("../img/icons/add.svg");
+    width: 52px;
+    height: 52px;
+  }
+}

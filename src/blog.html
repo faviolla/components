@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('templates/head.html', {
+    "cssLink": "/css/blog.css"
+    }
+  )
+  <body>
+    @@include('templates/header.html')
+    <main class="main">
+      <div class="heading-section heading-bg">
+        <div class="container">
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs-list">
+              <li><a href="">Главная</a>/</li>
+              <li>Блог</li>
+            </ul>
+          </div>
+          <div class="title-section">
+            <div class="h1">Блог</div>
+          </div>
+        </div>
+      </div>
+      <div class="catalog-section">
+        <div class="container">
+          <div class="content-section">
+            <div class="blog-container">
+              <div class="blog-list">
+                @@include('components/blog-item.html', {
+                  imgSrc: '/img/img-blog-01.jpg',
+                  blogTitle: 'Виды помола кофе и способы заваривания',
+                  blogDescr: 'Количество любителей кофе в настоящее время примерно такое же, как и ценителей чая'
+                })
+                @@include('components/blog-item.html', {
+                  imgSrc: '/img/img-blog-02.jpg',
+                  blogTitle: 'Условия для правильного хранения кофе',
+                  blogDescr: 'Многие почитатели кофе задаются вопросом о том, как хранить этот продукт, в какой ёмкости/упаковке и при'
+                })
+                @@include('components/blog-item.html', {
+                  imgSrc: '/img/img-blog-03.jpg',
+                  blogTitle: 'Неразрешимый спор: арабика или робуста',
+                  blogDescr: 'Любители кофе выбирают зерна, ориентируясь на собственные ощущения: насколько сильным должен'
+                })
+                @@include('components/blog-item.html', {
+                  imgSrc: '/img/img-blog-01.jpg',
+                  blogTitle: 'Виды помола кофе и способы заваривания',
+                  blogDescr: 'Количество любителей кофе в настоящее время примерно такое же, как и ценителей чая'
+                })
+                @@include('components/blog-item.html', {
+                  imgSrc: '/img/img-blog-03.jpg',
+                  blogTitle: 'Неразрешимый спор: арабика или робуста',
+                  blogDescr: 'Любители кофе выбирают зерна, ориентируясь на собственные ощущения: насколько сильным должен'
+                })
+                @@include('components/blog-item.html', {
+                  imgSrc: '/img/img-blog-02.jpg',
+                  blogTitle: 'Условия для правильного хранения кофе',
+                  blogDescr: 'Многие почитатели кофе задаются вопросом о том, как хранить этот продукт, в какой ёмкости/упаковке и при'
+                })
+                @@include('components/blog-item.html', {
+                  imgSrc: '/img/img-blog-03.jpg',
+                  blogTitle: 'Неразрешимый спор: арабика или робуста',
+                  blogDescr: 'Любители кофе выбирают зерна, ориентируясь на собственные ощущения: насколько сильным должен'
+                })
+                @@include('components/blog-item.html', {
+                  imgSrc: '/img/img-blog-02.jpg',
+                  blogTitle: 'Условия для правильного хранения кофе',
+                  blogDescr: 'Многие почитатели кофе задаются вопросом о том, как хранить этот продукт, в какой ёмкости/упаковке и при'
+                })
+                @@include('components/blog-item.html', {
+                  imgSrc: '/img/img-blog-01.jpg',
+                  blogTitle: 'Виды помола кофе и способы заваривания',
+                  blogDescr: 'Количество любителей кофе в настоящее время примерно такое же, как и ценителей чая'
+                })
+              </div>
+            </div>
+            @@include('components/pagination.html')
+          </div>
+        </div>
+      </div>
+    </main>
+    @@include('templates/footer.html')
+  </body>
+</html>

@@ -1,0 +1,114 @@
+.content {
+  &-nav {
+    margin: 0 0 15px;
+  }
+}
+.nav-list {
+  margin: 0;
+  list-style: none;
+  border: 1px solid $lineColor;
+  padding: 16px 20px 17px;
+  li {
+    font-size: 16px;
+    line-height: 25px;
+    &.active {
+      span {
+        color: $orange;
+        border-color: $orange;
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+  }
+}
+.bg-content-layout {
+  background:$black;
+  opacity: .5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 11;
+}
+@media (min-width: 768px) {
+  .content {
+    &-nav {
+      margin: 0 0 20px;
+    }
+  }
+}
+@media (min-width: 1280px) {
+  .content {
+    &-nav {
+      width: 285px;
+      li {
+        margin: 0 0 20px;
+        &.active {
+          span {
+            border-bottom: 1px solid $orange;
+            border-color: $orange;
+          }
+        }
+      }
+    }
+  }
+  .nav-list {
+    padding: 30px 30px 10px;
+  }
+
+}
+@media (max-width: 1279px) {
+  .content {
+    &-nav {
+      height: 60px;
+      position: relative;
+    }
+  }
+  .nav {
+    &-list {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      max-height: 60px;
+      transition: max-height .3s ease;
+      background: $white;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      z-index: 12;
+      &.opened {
+        max-height: 999px;
+        transition: max-height 1s ease;
+        li {
+          &.active {
+            &:after {
+              transform: rotate(180deg);
+            }
+          }
+        }
+      }
+      li {
+        &:not(.active) {
+          padding: 15px 0 0;
+          order: 2;
+        }
+        &.active {
+          position: relative;
+          order: 1;
+          cursor: pointer;
+          &:after {
+            content: '';
+            position: absolute;
+            right: 0;
+            width: 24px;
+            height: 24px;
+            background: url(../img/icons/arrow-down.svg) no-repeat;
+            transition: .3s ease;
+          }
+        }
+      }
+    }
+  }
+}

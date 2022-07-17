@@ -1,0 +1,124 @@
+.ex_1 {
+  .rating {
+    padding: 3px 0;
+    position: relative;
+    &-row {
+      display: flex;
+      align-items: center;
+      margin: 0 0 15px;
+    }
+    &-title {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 16px;
+      line-height: 19px;
+      margin: 0 28px 0 0;
+    }
+    &-visual {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    input.rating__check {
+      display: none;
+    }
+    .rating__star {
+      display: inline-block;
+      vertical-align: top;
+      width: 14px;
+      height: 14px;
+      background: url('../img/icons/ic-star.svg');
+      margin: 0 4px 0 0;
+      cursor: pointer;
+      &:before {
+        content: '';
+        display: block;
+        width: 14px;
+        height: 14px;
+        border-radius: 100px;
+        opacity: 0;
+        transition: all .3s;
+      }
+    }
+  }
+  .rating-visual .rating__star:hover:before,
+  .rating-visual .rating__star:hover ~ .rating__star:before,
+  .rating-visual .rating__check:checked ~ .rating__star:before {
+    background-image: url('../img/icons/ic-star-full.svg');
+    opacity: 1;
+  }
+}
+
+/* rating - variant 2 */
+.ex_2 {
+  margin: 25px 0;
+  .ic-big-star {
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      background-color: #ccc;
+  }
+  .rating {
+      &__stars {
+          display: flex;
+          flex-direction: row-reverse;
+          position: relative;
+          padding-right: 20px;
+      }
+      &__check:checked ~ .rating__star .ic-big-star {
+          //@include sprite(ic-big-star-full);
+          background-color: #000;
+      }
+      &__check {
+          display: none;
+          cursor: pointer;
+          &:hover ~ .rating__star .ic-big-star{
+              //@include sprite(ic-big-star-full);
+              background-color: #000;
+          }
+      }
+      &__star {
+          display: inline-block;
+          width: 25px;
+          height: 25px;
+          cursor: pointer;
+          margin-right: 6px;
+      }
+      &__row {
+          display: flex;
+          align-items: center;
+          margin-bottom: 5px;
+      }
+      &__num {
+          color: #000;
+          font-size: 36px;
+      }
+      &__title {
+          font-size:16px;
+          line-height: 1.5;
+          display: inline-block;
+          width: 100%;
+      }
+  }
+  .rating-name {
+      color: #000;
+      font-size: 25px;
+      line-height: 1;
+      font-weight: 600;
+      position: absolute;
+      left: 100%;
+      top: 50%;
+      transform: translate(0, -51%);
+      background: #fff;
+      padding: 0 7px 0 0;
+      opacity: 0;
+  }
+  .rating__stars label.rating__star:hover > .rating-name {
+      opacity: 1;
+      z-index: 2;
+  }
+  .rating__check:checked + .rating__star > .rating-name {
+      opacity: 1;
+      z-index: 1;
+  }
+}
+

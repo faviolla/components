@@ -1,0 +1,71 @@
+.letters {
+  &-filter {
+    background: $light-grey3;
+    padding: 10px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 600;
+    margin: 0 0 23px;
+    a {
+      color: $fontColor;
+      margin: 5px 10px;
+      &[data-letter="all"] {
+        color: $linkColor;
+      }
+      &.mute {
+        opacity: .5;
+        pointer-events: none;
+      }
+      &.active {
+        color: $linkColor;
+      }
+    }
+  }
+  &-content {
+    border-bottom: 1px solid $lineColor;
+    padding: 0 0 5px;
+  }
+  &-value {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    columns: 2;
+    li {
+      padding: 0 0 15px;
+      font-size: 16px;
+      line-height: 24px;
+      word-wrap: break-word;
+      break-inside: avoid;
+      &.hidden {
+        display: none;
+      }
+    }
+    a {
+      color: $fontColor;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .letters {
+    &-value {
+      columns: 4;
+    }
+  }
+}
+@media (min-width: 1280px) {
+  .letters {
+    &-filter {
+      padding: 25px 15px;
+      a {
+        margin: 2px 10px;
+      }
+    }
+    &-value {
+      columns: 5 220px;
+    }
+  }
+}

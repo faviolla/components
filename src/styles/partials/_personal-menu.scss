@@ -1,0 +1,128 @@
+.personal {
+  &-nav {
+    width: 100%;
+    border: 1px solid $blue-dark;
+    position: relative;
+    &-mobile {
+      padding: 15px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 27px;
+    }
+    i {
+      transition: .3s ease;
+    }
+  }
+  &-title {
+    display: none;
+  }
+  &-list {
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+    right: 0;
+    margin: 0;
+    list-style: none;
+    background-color: $white;
+    z-index: 1;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s linear;
+    padding: 0 20px;
+    &-item {
+      color: $dark-grey;
+      font-size: 16px;
+      line-height: 25px;
+      &.active {
+        color: $blue-dark;
+        border-bottom: 1px solid $blue-dark;
+      }
+    }
+    li {
+      margin-top: 10px;
+      &:first-child {
+        margin-top: 20px;
+      }
+    }
+    &-num {
+      display: inline-flex;
+      margin-left: 8px;
+    }
+  }
+  &-logout {
+    margin-top: 15px;
+    padding-bottom: 20px;
+    a {
+      color: $blue-dark;
+      font-size: 14px;
+      line-height: 140%;
+    }
+  }
+}
+.opened-pmenu {
+  .personal {
+    &-list {
+      max-height: 300px;
+      transition: max-height .3s linear;
+    }
+    &-nav {
+      i {
+        transform: rotate(180deg);
+        transition: .3s ease;
+      }
+    }
+  }
+}
+@media (min-width:767px) {
+  .personal {
+    &-nav {
+      &-mobile {
+        padding: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width:1280px) {
+  .personal {
+    &-nav {
+      width: 307px;
+      margin-right: 20px;
+      padding: 30px 30px 20px;
+      border: 1px solid $blue-dark;      
+      &-mobile {
+        display: none;
+      }
+    }
+    &-title {      
+      padding-bottom: 20px;
+      display: block;
+      border-bottom: 1px solid $grey;
+      font-size: 24px;
+      line-height: 33px;
+      font-weight: 500;  
+    }
+    &-list {
+      position: static;
+      padding: 20px 0 0;
+      max-height: 100%;
+      overflow: initial;
+      li {
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+    &-logout {
+      margin-top: 19px;
+      padding-top: 20px;
+      padding-bottom: 0;
+      border-top: 1px solid $grey;
+    }
+  }
+}
+

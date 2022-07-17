@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('templates/head.html')
+<body class="personal-page">
+  @@include('templates/header.html')
+  <main class="main main-template">    
+    <div class="container">
+      <div class="personal-container">
+        @@include('components/personal/personal-menu.html')
+        <div class="personal-content">
+          <div class="product-list__section">
+            <div class="product-list">
+              @@include('components/product3.html', {
+                imgSrc: '/img/products/product-01.jpg',
+                productTitle: 'POPSODA чемодан 45 см blac',
+                productPrice: '19 449 грн',
+                productOldPrice: '12 292'
+              })
+              @@include('components/product4.html', {
+                imgSrc: '/img/products/product-02.jpg',
+                productTitle: 'NEOPULSE X DIESEL чемодан 55см. black/yellow',
+                productPrice: '10 099 грн'                
+              })
+              @@include('components/product3.html', {
+                imgSrc: '/img/products/product-01.jpg',
+                productTitle: 'POPSODA чемодан 45 см blac',
+                productPrice: '19 449 грн',
+                productOldPrice: '12 292'
+              })
+              @@include('components/product4.html', {
+                imgSrc: '/img/products/product-02.jpg',
+                productTitle: 'NEOPULSE X DIESEL чемодан 55см. black/yellow',
+                productPrice: '10 099 грн'                
+              })
+              @@include('components/product3.html', {
+                imgSrc: '/img/products/product-01.jpg',
+                productTitle: 'POPSODA чемодан 45 см blac',
+                productPrice: '19 449 грн',
+                productOldPrice: '12 292'
+              })
+              @@include('components/product4.html', {
+                imgSrc: '/img/products/product-02.jpg',
+                productTitle: 'NEOPULSE X DIESEL чемодан 55см. black/yellow',
+                productPrice: '10 099 грн'                
+              })
+            </div>            
+          </div>
+        </div>
+      </div>        
+    </div>   
+  </main>
+  @@include('templates/footer.html')
+</body>
+</html>

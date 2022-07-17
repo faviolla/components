@@ -1,0 +1,357 @@
+.point {
+  &-active {
+    .point-icon {
+      border-color: $btn;
+      &:after {
+        background:$btn;
+      }
+    }
+  }
+  &-item {
+    display: none;
+    &.active {
+      display: block;
+    }
+    border-bottom: 1px solid $lineColor;
+    padding: 20px 0;
+    &:last-child {
+      border: none;
+    }
+    &-list {
+      margin-bottom: 20px;
+      p {
+        margin: 0 0 5px;
+      }
+    }
+  }
+  &-top {
+    display: flex;
+    margin-bottom: 5px;
+  }
+  &-icon {
+      display: none;  
+  }
+  &-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    pointer-events: none;
+  }
+  &-info {
+    &-item {
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: 15px;
+      i {
+        margin-right: 6px;
+      }
+    }
+  }
+  &-row {
+    margin: 14px 0 0;
+    i {
+      margin-right: 7px;
+    }
+  }
+  &-links {
+    margin-top: 20px;
+    a {
+      margin-right: 16px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  &-tab {
+    &-control {
+      width: 50%;          
+      text-align: center;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      padding: 21px 5px;
+      position: relative;
+      color: $btn;
+      &:first-child {
+        &:after {
+          content: "";
+          background-color: $btn;
+          opacity: .2;
+          width: 1px;
+          height: 32px;
+          top: 16px;
+          position: absolute;
+          right: 0;
+        }
+      }
+      &.active {
+        color: $fontColor;
+        pointer-events: none;
+      }
+      &s {
+        display: flex;        
+        margin: 0 -13px;
+      }
+    }
+    &-content {
+      width: 100%;
+      margin-top: 20px;
+    }
+    &-info {
+      margin-top: 20px;
+      p {
+        margin: 0 0 15px 0;
+      }
+      .btn {
+        padding: 8px 15px;
+        &-holder {
+          text-align: center;
+        }
+      }
+    }
+  }
+  &-top {
+    pointer-events: none;
+    &-info {
+      margin-top: 20px;
+    }
+  }
+  &-section {
+    max-width: 994px;
+    margin: 0 auto 60px;
+    p {
+      font-size: 16px;
+      line-height: 150%;
+      margin-bottom: 20px;
+    }
+    .text-container {
+      max-width: 792px;
+      margin: 0 auto;
+    }
+  }
+  &-main-text {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+
+}
+.map {
+  &-point {
+    width: 100%;
+    height: 550px;
+  }
+  &-holder {
+    width: 100%;
+    height: 100%;
+  }
+}
+.city {
+  &-dropdown {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 10px auto;
+    text-align: center;
+    .dropdown-link {
+      justify-content: center;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      &:after {
+        content: none;
+      }
+      span {
+        margin-right: 4px;
+      }
+    }
+    i {
+      width: 24px;
+      height: 24px;
+      background: url(../img/icons/ic-arrow.svg) no-repeat;
+    }
+    &.opened  {
+      .dropdown-box {
+        z-index: 2;
+      }
+      i {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  &-list {
+    margin: 0;
+    max-height: 140px;
+    overflow-y: auto;
+    &-holder {
+      width: 375px;
+      max-width: 100%;
+      text-align: left;
+      left:50%;
+      transform: translateX(-50%);
+      padding:30px 8px 15px 20px;
+      .city-list {
+        margin: 0;
+      }
+    }
+    li {
+      padding-left: 0;
+      font-size: 14px;
+      line-height: 140%;
+      cursor: pointer;
+      &:before {
+        content: none;
+      }
+    }
+    .active {
+      color: $btn;
+    }
+
+  }
+}
+.content {
+  &-section {
+    max-width: 1000px;
+    margin: 20px auto 60px;
+  }
+  &-block {
+    margin: 20px auto;
+    width: 100%;
+    & > div {
+      width: 50%;
+    }
+  }
+}
+.bg-section {
+  background: $bgSection
+}
+@media(min-width:768px) {
+  .content-block {
+    display: flex;
+    height: 500px;
+  }
+  .point {
+    &-top {
+      pointer-events: auto;
+      cursor: pointer;
+    }
+    &-list {
+      max-height: 100%;
+      overflow-y: auto;      
+    }
+    &-icon {
+      display: block;
+      min-width: 24px;
+      width: 24px;
+      height: 24px;
+      border: 1px solid $lineColor;
+      border-radius: 50%;
+      margin-right: 20px;
+      position: relative;
+      &:after {
+        content:"";
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        top: 7px;
+        left: 7px;   
+        position: absolute;     
+      }    
+    }
+    &-links {
+      display: inline-flex;
+      margin-left: 20px;
+    }
+    &-info {
+      padding-left: 45px;
+      .link {
+        &-toggle-map {
+          display: none;
+        }
+      }
+
+    }
+    &-row {
+      margin-top: 0;
+    }
+    &-item {
+      &-list {
+        display: flex;
+        margin-bottom: 30px;
+        .contact-item {
+          width: auto;
+          padding-bottom: 26px;
+          &:first-child {
+            margin-right: 10%;
+          }
+        }
+      }
+    }
+    &-tab {
+      &-info {        
+        display: flex;
+        font-size: 20px;
+        line-height: 150%;
+        align-items: flex-start;
+        p {
+          margin:0 10px 0 0;
+        }            
+        .btn {
+          padding: 8px 16px;
+          &-holder {
+            min-width: 200px;
+            width: 200px;
+            margin-left: auto;
+            text-align: right;
+          }
+        }
+      }
+      &-control {
+        padding: 23px 10px;
+        font-size: 16px;
+        line-height: 24px;
+        &s {
+          margin: 0;
+        }
+      }
+    }
+    &-main-text {
+      margin: 30px 0;
+      font-size: 20px;
+      line-height: 150%;
+      p {
+        font-size: inherit;
+        line-height: inherit;
+      }
+    }
+  }
+}
+@media (min-width:1280px) {
+  .point {
+    &-list {
+      min-height: 100%;
+    }
+    &-item {
+      &-list {
+        padding: 0 10px;
+        .contact-item {
+          p {
+            margin-bottom: 5px;
+          }
+          &:first-child {
+            width: 25%;
+            margin-right: 124px;
+          }
+        }
+      }
+    }
+    &-main-text {
+      margin: 40px 0 30px;
+    }
+  }
+}
+@media(max-width:767px) {
+  .point-top {
+    pointer-events: none;
+  }
+}

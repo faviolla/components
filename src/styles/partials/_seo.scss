@@ -1,0 +1,130 @@
+.seo {
+  &-section {
+    margin: 30px 0;
+  }
+  &-text {
+    max-height: 226px;
+    position: relative;
+    transition: max-height 1s cubic-bezier(0,1,0,1);
+    overflow: hidden;
+    width: 100%;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 0 10px;
+    &.bg-gradient {
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        background: linear-gradient(0deg, $white 0%, rgba(255, 255, 255, 0) 100%);
+        pointer-events: none;
+      }
+    }
+  }
+}
+.text {
+  &-container {
+    &.opened {
+      .seo-text {
+        max-height: 1699px;
+        transition: max-height 1.5s ease-in-out;
+      }
+    }
+    h1 {
+      font: 20px/24px $ftMuseoSansCyrl300;
+      margin: 0 0 10px;
+    }
+    p {
+      margin: 0 0 10px;
+    }
+    ol,
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    ul {
+      li {
+        position: relative;
+        padding-left: 18px;
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 10px 0;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 7px;
+          left: 2px;
+          width: 6px;
+          height: 6px;
+          background-color: $linkColor;
+        }
+      }
+    }
+    ol {
+      counter-reset: item;
+      li {
+        counter-increment: item;
+        padding-left: 28px;
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 10px 0;
+        position: relative;
+        &:before {
+          content: counter(item) ".";
+          color:$linkColor;
+          font-size: 14px;
+          position: absolute;
+          top: 0;
+          left: 2px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .seo {
+    &-section {
+      margin: 50px 0;
+    }
+    &-container {
+      padding: 0 63px;
+    }
+    &-text {
+      max-height: 130px;
+    }
+  }
+}
+@media (min-width: 1280px) {
+  .seo {
+    &-section {
+      margin: 80px 0 100px;
+    }
+    &-container {
+      max-width: 858px;
+      margin: 0 auto;
+    }
+    &-text {
+      max-height: 240px;
+    }
+  }
+  .text {
+    &-container {
+      h1 {
+        font-size: 24px;
+        line-height: 31px;
+        margin: 0 0 18px;
+      }
+    }
+  }
+}
+@media (min-width: 1701px) {
+  .seo {
+    &-section {
+      margin: 100px 0;
+    }
+  }
+}

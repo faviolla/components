@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('templates/head.html', {
+  "cssLink": "/css/product-page.css"
+})
+<body>
+  @@include('templates/header.html')
+  <main class="main">
+    <div class="kit-section section">
+      <div class="container">
+        <div class="holder">
+          <div class="title-section">
+            <div class="h2">Разом економніше</div>
+          </div>
+          @@include('components/kit.html')
+        </div>
+      </div>
+    </div>
+  </main>
+  @@include('templates/footer-template.html')
+</body>
+</html>

@@ -1,0 +1,118 @@
+*,
+:before,
+:after {
+  box-sizing: border-box;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  height: 100%;
+  position: relative;
+}
+
+body {
+  height: 100%;
+  min-width: 320px;
+  font: 14px/17px $ftNotoSans;
+  color: $fontColor;
+  display: flex;
+  flex-direction: column;
+  &.opened-burger,
+  &.opened-search,
+  &.filter-opened {
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $linkColor;
+  transition: all .3s ease;
+
+  &:hover {
+    color: $linkHover;
+    opacity: .8;
+  }
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.main {
+  flex: 1 0 auto;
+}
+.center {
+  text-align: center;
+}
+.section {
+  margin: 0 0 50px;
+}
+.title {
+  &-section {
+    margin: 10px 0 20px;
+  }
+}
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+.col-25 {
+  width: 50%;
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .title {
+    &-section {
+      margin: 10px 0 26px;
+    }
+  }
+  .col-25 {
+    width: calc(100%/3);
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1296px;
+    padding: 0 5px;
+  }
+  .title {
+    &-section {
+      margin: 15px 0 30px;
+    }
+  }
+  .section {
+    margin: 0 0 80px;
+  }
+  .col-25 {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1701px) {
+  .container {
+    max-width: 1626px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .container {
+    padding: 0 30px;
+  }
+  .main {
+    padding-top: 54px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 20px;
+  }
+  .main {
+    padding-top: 54px;
+  }
+}

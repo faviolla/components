@@ -1,0 +1,27 @@
+<div class="testimonials-form">
+  <form action="" class="form_validate js-send" data-success="modals/success-testimonial.html">
+      
+    @@include('rating-1.html')
+
+    <div class="form-group">
+      @@include('textarea.html', {
+        id: 'message',
+        validate: 'required',
+        label: 'Комментарий',
+        errorText: 'Введите комментарий'
+      })
+    </div>
+
+    <div class="form-group form-group-inputs">
+
+      @@include('input-email.html')
+
+      @@include('input-name.html')
+
+      <div class="input-holder btns-holder">
+        <button class="btn btn-secondary btn-lg" type="submit">Отправить</button>
+      </div>
+    </div>
+  </form>    
+</div>
+

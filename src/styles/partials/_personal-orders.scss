@@ -1,0 +1,246 @@
+.status {
+  &-new {
+    color: $statusNew;
+  }
+  &-cancel {
+    color: $statusCancel;
+  }
+  &-done {
+    color: $statusDone;
+  }
+  &-wait {
+    color: $statusWait;
+  }
+}
+[class*="status-"]{
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.personal {
+  &-order {
+    &-item {
+      border: 1px solid $lineColor;
+      &.active {
+        .personal-order-head {
+          &:after {
+            transform: rotate(180deg);
+          }
+        }
+      }
+      & + .personal-order-item {
+        border-top: none;
+      }
+    }
+    &-head {
+      padding: 15px 30px 8px 15px;
+      font-size: 14px;
+      line-height: 20px;
+      font-family: $ftNotoSans;
+      color: $fontColor;
+      position: relative;
+      cursor: pointer;
+      &:after {
+        content:"";
+        position: absolute;
+        right: 15px;
+        top: 18px;
+        width: 24px;
+        height: 24px;
+        background: url(/img/icons/ic-arrow.svg) no-repeat center;
+      }
+      .col {
+        display: flex;
+        align-items: center;
+        margin-bottom: 7px;
+      }
+      .bold {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 29px;
+      }
+      span {
+        display: inline-flex;
+        margin-right: 10px;
+      }
+      i {
+        margin-right: 5px;
+      }
+    }
+    &-date {
+      color: $light-grey;
+    }
+    &-content {
+      display: none;
+      border-top: 1px solid $lineColor;
+    }    
+    &-left {
+      padding: 15px 4px 15px 15px;
+      border-bottom: 1px solid $lineColor;
+    }
+    &-right {
+      padding:15px 15px 5px;
+      .row {
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 20px;
+        max-width: 385px;
+      }
+      .info {
+        display: inline-flex;
+        margin-right: 3px;
+        color: $light-grey;
+      }
+    }
+    &-list {
+      margin-bottom: 40px;
+      margin-top: 20px;
+    }
+    &-title {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+  }
+}
+.order {
+  &-item {
+    display: flex;
+    margin-bottom: 15px;
+    &-img {
+      width: 90px;
+      margin-right: 10px;
+    }
+    &-block {
+      width: calc(100% - 100px);
+      a {
+        color: $fontColor;
+      }
+    }
+    &-info {
+      color: $light-grey;
+      font-weight: 300;
+      margin: 2px 0 5px;
+    }
+    .price {
+      &-current {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+      }
+      &-old {
+        color: $light-grey;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+      }
+    }
+  }
+  &-list {
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-y: auto;
+    scrollbar-color: $blue-dark $lineColor;
+    scrollbar-width: thin;
+    &::-webkit-scrollbar {
+      width: 21px;
+    }
+    &::-webkit-scrollbar-track {
+      border-radius: 6px;
+      background: $lineColor;
+      border: 10px solid transparent;
+      background-clip: content-box;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: $blue-dark;
+      border-radius: 10px;
+      border: 9px solid transparent;
+      background-clip: content-box;
+    }
+  }
+  
+}
+
+@media (min-width:768px) {
+  [class*="status-"] {
+    justify-content: flex-end;
+  }
+
+  .personal {
+    &-order {
+      &-head {
+        padding: 29px 46px 29px 30px;
+        display: flex;
+        .col {
+          margin-right: 30px;
+          margin-bottom: 0;
+          &:last-child {
+            margin-left: auto;
+          }
+        }
+        &:after {
+          right: 31px;
+          top: 31px;
+        }
+      }
+      &-content {
+        padding: 30px;
+      }
+      &-holder {
+        display: flex;
+      }
+      &-left {
+        width: 51%;
+        padding: 0 11px 0 0;        
+        border-right: 1px solid $lineColor;
+        border-bottom: none;
+      }
+      &-right {
+        width: 49%;
+        padding: 0 0 0 20px;
+      }
+      &-title {
+        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 26px;
+      }
+    }
+  }
+
+  .order {
+    &-item {
+      &-block {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media (min-width:1280px){
+  .personal {
+    &-order {
+      &-head {
+        .col {
+          width: 32%;
+          margin-right: 10px;
+          display: flex;
+          align-items: center;
+          &:last-child {
+            margin: 0;
+            width: 18%;
+            justify-content: flex-end;
+          }
+        }
+      }
+      &-right {
+        padding:0 0 0 50px;
+      }
+      &-left {
+        padding: 0 50px 0 0;
+      }
+      &-list {
+        margin-top: 0;
+      }
+    }
+  }
+}

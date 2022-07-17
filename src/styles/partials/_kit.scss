@@ -1,0 +1,168 @@
+.kit {
+  &-slider {
+    margin: 0 -12px;
+    .swiper {
+      &-container {
+        // padding: 0 12px;
+      }
+    }
+  }
+  &-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    border-top: 2px solid $lineColor;
+    border-bottom: 2px solid $lineColor;
+    padding: 20px 13px;
+    .product {
+      &-item {
+        width: calc(50% - 27px/2);
+      }
+      &-img {
+        margin: 0 0 18px;
+      }
+      &-name {
+        font-size: 13px;
+        line-height: 16px;
+      }
+      &-code {
+        font-size: 11px;
+        line-height: 13px;
+        margin: 0 0 8px;
+      }
+      &-discount {
+        border-radius: 3px;
+      }
+      &-plus {
+        position: absolute;
+        left: 50%;
+        top: 113px;
+        z-index: 2;
+        transform: translate(-50%, 0);
+      }
+    }
+    .price {
+      &-current {
+        font-family: $ftMuseoSansCyrl500;
+      }
+    }
+  }
+}
+.product-total-price {
+  width: 100%;
+  padding: 20px 0 0;
+  text-align: center;
+  .total-title {
+    font: 20px/24px $ftMuseoSansCyrl900;
+    margin: 0 0 12px;
+  }
+  .price {
+    font-size: 29px;
+    line-height: 35px;
+    margin-right: 26px;
+    &-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .kit {
+    &-slider {
+      margin: 0 auto;
+      max-width: 1230px;
+    }
+    &-item {
+      border: 2px solid $lineColor;
+      border-radius: 0 0 38px 0;
+      padding: 32px;
+      justify-content: center;
+      align-items: center;
+      .product {
+        &-item {
+          width: 170px;
+        }
+        &-plus {
+          position: static;
+          margin: 0 80px;
+          transform: none;
+        }
+      }
+    }
+  }
+  .product-total-price {
+    padding: 32px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .total-title {
+      font-size: 22px;
+      line-height: 26px;
+    }
+    .price {
+      font-size: 35px;
+      line-height: 42px;
+      font-family: $ftMuseoSansCyrl500;
+      margin-right: 25px;
+    }
+    .btn {
+      font-size: 18px;
+      line-height: 22px;
+      padding: 20px 32px;
+    }
+  }
+}
+@media (min-width: 1280px) {
+  .kit {
+    &-slider {
+      .swiper-button {
+        &-prev {
+          left: 12px;
+          margin-top: -36px;
+
+        }
+        &-next {
+          right: 12px;
+          margin-top: -36px;
+
+        }
+      }
+    }
+    &-item {
+      padding-left: 60px;
+      padding-right: 85px;
+      justify-content: flex-start;
+      .product {
+        &-item {
+          display: flex;
+          align-items: center;
+          width: 360px;
+        }
+        &-img {
+          width: 170px;
+          flex-shrink: 0;
+          margin: 0 18px 0 0;
+        }
+        &-plus {
+          margin: 0 33px;
+        }
+      }
+    }
+  }
+  .product-total-price {
+    width: auto;
+    padding: 0;
+    display: block;
+    text-align: left;
+    margin-left: auto;
+    .price {
+      margin: 0 0 16px;
+      &-block {
+        display: block;
+      }
+    }
+  }
+}

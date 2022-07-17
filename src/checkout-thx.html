@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('templates/head.html')
+  <body class="checkout-page">
+    @@include('templates/header.html')
+    <main class="main">
+      <div class="container checkout-container">
+        <div class="checkout-holder">
+          <div class="checkout-column">
+            <div class="checkout-section bg-white">
+              <div class="title-holder">
+                <div class="h3">Спасибо, заказ №3837499 принят! </div>
+              </div>
+              <div class="checkout-text">Мы свяжемся с вами в ближайшее время для подтверждения заказа и уточнения деталей доставки.</div>
+              @@include('components/order-list.html')
+            </div>
+            <div class="checkout-section bg-white">
+              <div class="checkout-order-info">
+                <div class="order-info__section">
+                  <div class="order-info__title">Доставка: самовывоз из магазина Bagazhnik.ua</div>
+                  <ul class="order-info__list">
+                    <li>
+                      <span class="order-info__heading">Адрес</span>
+                      <span class="order-info__value">Киев, ул. Верхний Вал, 68</span>
+                    </li>
+                    <li>
+                      <span class="order-info__heading">Имя</span>
+                      <span class="order-info__value">Александр</span>
+                    </li>
+                    <li>
+                      <span class="order-info__heading">Фамилия</span>
+                      <span class="order-info__value">Новиков</span>
+                    </li>
+                    <li>
+                      <span class="order-info__heading">Телефон</span>
+                      <span class="order-info__value">+38 (095) 678 99 77</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="order-info__section">
+                  <div class="order-info__title">Оплата: наличными</div>
+                  <ul class="order-info__list">
+                    <li>
+                      <span class="order-info__heading">К оплате:</span>
+                      <span class="order-info__value"><strong>39 877 грн</strong></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="checkout-column">
+            <div class="checkout-section bg-white order-follow">
+              <div class="title-holder">
+                <div class="order-title">Отслеживайте свой заказ в личном кабинете
+                </div>
+                <div class="checkout-text">На ваш e-mail alexandr@mail.com отправлена информация о вашем заказе с подробным описанием</div>
+                <a href="" class="btn btn-primary btn-sm">Отследить заказ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    @@include('templates/footer-checkout.html')
+  </body>
+</html>

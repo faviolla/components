@@ -1,0 +1,56 @@
+.tab {
+  &-holder {
+    position: relative;
+    overflow: hidden;
+  }
+  &-controls {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    a {
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 140%;
+      border-bottom: 1px solid transparent;
+      color: $blue-dark;
+      display: inline-flex;
+      margin-right: 25px;
+      white-space: nowrap;
+      &:hover {
+        opacity: 1;
+        border-color: $blue;
+      }
+    }
+    .active {
+      border-bottom-color: $blue-dark;
+      color: $fontColor;
+    }
+    &-scroll {
+      margin: 10px 0;
+      width: 100%;
+      overflow-x: auto;
+      padding-bottom: 5px;
+      a:last-child {
+        padding-right: 15px;
+      }
+    }
+  }
+  &-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    pointer-events: none;
+    &.active {
+      display: block;
+      position: relative;
+      z-index: 1;
+      opacity: 1;
+      pointer-events: visible;
+    }
+  }
+}

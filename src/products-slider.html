@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('templates/head.html')
+<body>
+  @@include('templates/header.html')
+  <main class="main main-template">
+    <div class="section">
+      <div class="container">
+        <div class="holder">
+          <div class="title-section">
+            <div class="h2">Компонент товара</div>
+          </div>
+          <div class="section-body">
+            <div class="columns">
+              <div class="col-25">
+                @@include('components/product.html', {
+                  imgSrc: '/img/products/product-01.jpg',
+                  productTitle: 'POPSODA чемодан 45 см blac',
+                  productPrice: '19 449 грн'
+                })
+              </div>
+              <div class="col-25">
+                <ul class="lbls-list">
+                  <li>
+                    <div class="product-label lbl-stock"><span>Акция</span></div>
+                  </li>
+                  <li>
+                    <div class="product-label lbl-discount"><span>-20%</span></div>
+                  </li>
+                  <li>
+                    <div class="product-label lbl-new"><span>Новинка</span></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="holder">
+          <div class="title-section">
+            <div class="h2">Новые поступления</div>
+          </div>
+          <div class="section-body">
+            @@include('components/product-slider.html')
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  @@include('templates/footer-template.html')
+</body>
+</html>

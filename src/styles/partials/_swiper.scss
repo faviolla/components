@@ -1,0 +1,50 @@
+.swiper {
+  &-button {
+    &-prev,
+    &-next {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 1px solid $lineColor;
+      background: $white;
+      top: -80px;
+      transform: none;
+      margin-top: 0;
+    }
+    &-prev {
+      left: auto;
+      right: 65px;
+      &:after {
+        content: '';
+        background: url('../img/icons/arr-prev.svg') no-repeat;
+        width: 17px;
+        height: 14px;
+      }
+    }
+    &-next {
+      right: 0;
+      &:after {
+        content: '';
+        background: url('../img/icons/arr-next.svg') no-repeat;
+        width: 17px;
+        height: 14px;
+      }
+    }
+  }
+  &-container-horizontal>.swiper-pagination-bullets {
+    bottom: 0;
+    .swiper-pagination-bullet {
+      margin: 0 5px;
+      background: $blue-dark;
+    }
+  }
+  &-pagination {
+    line-height: 0;
+    &-bullet {
+      opacity: 1;
+      &-active {
+        opacity: .6;
+      }
+    }
+  }
+}

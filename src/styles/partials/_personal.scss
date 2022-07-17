@@ -1,0 +1,135 @@
+.personal {
+  &-container {
+    margin: 15px 0 80px;
+    width: 100%;
+    font-family: $ftNotoSans;
+  }
+  &-page {
+    background: $white;
+    .main-template {
+      background-color: $white;
+    }
+  }
+  &-content {
+    &-holder {
+      border: 1px solid #E5E5E5;
+      font-size: 14px;
+      padding: 20px 20px 40px;
+    }
+  }
+  &-left {
+    .info {
+      display: inline-flex;
+      opacity: .7;
+      width: 100%;
+    }
+    .val {
+      word-break: break-word;
+    }
+    .row {
+      margin-bottom: 15px;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+  }
+  &-social {
+    &s {
+      p {
+        margin: 0 0 15px;
+        font-size: 14px;
+        line-height: 24px;
+        max-width: 306px;
+      }
+    }
+    &-list {
+      max-width: 440px;
+    }
+  }
+  &-block {
+    margin: 25px 0;
+    a {
+      font-size: 14px;
+      color: $blue-dark;
+    }
+  }
+}
+.social {
+  &-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px 0;
+    padding: 0;
+  }
+  &-item {
+    padding-left: 10px;
+    margin: 0 35px 25px 0;
+    padding: 0;
+  }
+  &-link {
+    display: flex;
+    align-items: center;
+    color: $blue-dark;
+    font-size: 13px;
+  }
+  &-active {
+    a {
+      color: $dark-grey;
+    }
+  }
+  &-icon {
+    width: 42px;
+    height: 42px;
+    margin-right: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-fb {
+      background-color: #3962A1;
+    }
+    &-google {
+      background-color: #DC4A38;
+    }
+    &-twitter {
+      background-color: #03A9F4;
+    }
+  }
+}
+
+@media (min-width:768px) {
+  .personal {
+    &-left {
+      width: 58%;
+      padding-right: 10px;
+    }
+    &-right {
+      width: 42%;
+    }
+    &-content { 
+      &-holder { 
+        display: flex;     
+      }
+    }
+  }
+}
+
+@media (min-width:1280px) {
+  .personal {
+    &-container {
+      display: flex;
+      align-items: flex-start;
+    }
+    &-content {
+      width: calc(100% - 327px);      
+      &-holder {
+        padding: 40px 40px 100px;       
+      }
+    }
+    &-left {
+      .info {
+        width: 155px;
+      }
+    }
+  }
+}

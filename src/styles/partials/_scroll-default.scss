@@ -1,0 +1,17 @@
+.scroll {
+  scrollbar-color: rgba(75, 50, 40, .6) rgba(240, 234, 226, .6);
+  scrollbar-width: thin;
+  &::-webkit-scrollbar {
+    width: 20px;
+  }
+  &::-webkit-scrollbar-track {
+    background: rgba(240, 234, 226, 0.6);
+    border: 9px solid transparent;
+    background-clip: content-box;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgba(207, 89, 45, .6);
+    border: 9px solid transparent;
+    background-clip: content-box;
+  }
+}

@@ -1,0 +1,178 @@
+.shops {
+  &-section {
+    padding-top: 15px;
+    width: 100%;
+  }
+  &-controls {
+    justify-content: space-between;
+    a {
+      width: calc(50% - 5px);
+      background: rgba(207, 89, 45, 0.1);
+      // font: 14px/19px $ftCenturyGothic;
+      font: 14px/19px 'sans-serif';
+      text-align: center;
+      justify-content: center;
+      border: 1px solid transparent;
+      padding: 15px;
+      color: $fontColor;
+      height: 50px;
+      margin: 0;
+      &.active {
+        border-color: $orange;
+        background: $white;
+      }
+    }
+  }
+}
+.address {
+  &-section {
+    overflow: hidden;
+  }
+  &__list {
+    border-top: 1px solid $lineColor;
+    padding-top: 15px;
+    margin-bottom: 30px;
+  }
+  &__item {
+    border-bottom: 1px solid $lineColor;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+  &__contact {
+    margin-bottom: 10px;
+  }
+  &__phone,
+  &__time {
+    color: grey;
+    font-size: 14px;
+    line-height: 23px;
+    margin: 0 0 5px;
+    a {
+      color: grey;
+    }
+    i {
+      margin: 0 5px 0 0;
+    }
+    span, a {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  &__descr {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 0 7px;
+  }
+}
+.contact-address {
+  font: bold 16px/20px sans-serif;
+  margin: 0 0 10px;
+  font-style: normal;
+}
+.subway {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 0 7px;
+  i {
+    margin: 0 5px 0 0;
+  }
+}
+.map {
+  &-section {
+    height: 450px;
+    width: 100%;
+    #map {
+      height: 100%;
+    }
+  }
+}
+.gm-style {
+  .gm-style-iw-c {
+    border-radius: 0;
+  }
+  .gm-style-iw-t::after {
+    display: none;
+  }
+}
+.infoblock {
+  padding: 8px 20px 8px 8px;
+  max-width: 283px;
+}
+.gm-ui-hover-effect {
+  background: url('../img/icons/close.svg') no-repeat 50% 50% !important;
+  top: 10px !important;
+  right: 10px !important;
+}
+
+@media (min-width: 768px) {
+  .shops {
+    &-section {
+      padding-top: 35px;
+      .tab {
+        &-content {
+          position: static;
+          opacity: 1;
+          pointer-events: visible;
+          width: calc(50% - 5px);
+          &-section {
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+      }
+    }
+    &-controls {
+      display: none;
+    }
+  }
+  .address {
+    &-section {
+      .title-h2 {
+        margin-bottom: 20px;
+      }
+    }
+    &__list {
+      padding-top: 20px;
+      margin-bottom: 35px;
+    }
+    &__item {
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+    &__descr {
+      margin: 0 0 10px;
+    }
+  }
+  .map {
+    &-section {
+      height: 260px;
+    }
+  }
+}
+@media (min-width: 1280px) {
+  .shops {
+    &-section {
+      .map-content {
+        width: calc(67% - 10px);
+        padding-top: 54px;
+      }
+      .list-content {
+        width: calc(33% - 10px);
+      }
+    }
+  }
+  .address {
+    &-section {
+      margin-bottom: -40px;
+      .title-h2 {
+        margin: 0 0 20px;
+      }
+    }
+    &__list {
+      margin-bottom: 40px;
+    }
+  }
+  .map-section {
+    height: 450px;
+  }
+}

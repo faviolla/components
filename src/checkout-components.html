@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('templates/head.html')
+<body class="checkout-page">
+  @@include('templates/header-checkout.html')
+  <main class="main">
+    <div class="container checkout-container"> 
+      <div class="checkout-holder">
+        <div class="checkout-content"> 
+          <!-- second-step -->
+          <div class="checkout-step step-2 active">            
+            <div class="checkout-step-title">
+              <span class="checkout-title">Inputs row</span>
+            </div>
+
+            <div class="checkout-step-content">
+              <form method="post" action="" class="form_validate checkout-form" id="orderForm">                
+              <!-- inputs-row -->
+                <div class="inputs-row">                
+                  <div class="form-group">
+                    <div class="input-holder">
+                      <input type="text" value="" class="input js-autocomplete-branch js-validate ui-autocomplete-input" name="warehouse" id="warehouse" data-source="file-list-cities.json" autocomplete="off" data-list="/assets/components/msnovaposhta/action.php?action=delivery/warehouse/getlist&amp;ctx=web">
+                      <label for="warehouse" class="input-label">Выберите отделение</label>
+                      <span class="clean-input"><i class="icon-close"></i></span>
+                      <span class="error-text">Введите отделение</span>
+                    </div>
+                    <div class="autocomplete-result-holder">
+                      <div class="autocomplete-result js-result"><ul id="ui-id-2" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul></div>
+                        <div class="autocomplete-result noresult js-noresult hide">
+                            <span class="autocomplete-noresult-text">Выберите город из списка</span>
+                        </div>
+                    </div>
+                  </div>                
+                </div>
+
+                <div class="inputs-row row-2">
+                  @@include('components/form/input.html', {
+                    inputHolderClass:"",
+                    inputType: "text",
+                    inputClass: "",
+                    inputId: "surname",
+                    inputDataValidate:"required",
+                    inputLabel: "Имя",
+                  })
+                  @@include('components/form/input.html', {
+                    inputHolderClass:"",
+                    inputType: "text",
+                    inputClass: "",
+                    inputId: "input-2",
+                    inputDataValidate:"required",
+                    inputLabel: "Имя получателя",
+                  })                                         
+                </div>                 
+
+                <div class="inputs-row row-3">  
+                  @@include('components/form/input.html', {
+                    inputHolderClass:"col-2",
+                    inputType: "text",
+                    inputClass: "",
+                    inputId: "input-3",
+                    inputDataValidate:"required",
+                    inputLabel: "Фамилия получателя",
+                  })  
+                  @@include('components/form/input.html', {
+                    inputHolderClass:"",
+                    inputType: "text",
+                    inputClass: "",
+                    inputId: "input-4",
+                    inputDataValidate:"required",
+                    inputLabel: "Имя получателя",
+                  })                        
+                </div>
+
+                <div class="inputs-row row-3">
+                  @@include('components/form/input.html', {
+                    inputHolderClass:"",
+                    inputType: "text",
+                    inputClass: "",
+                    inputId: "input-5",
+                    inputDataValidate:"required",
+                    inputLabel: "Имя получателя",
+                  }) 
+                  @@include('components/form/input.html', {
+                    inputHolderClass:"",
+                    inputType: "text",
+                    inputClass: "",
+                    inputId: "input-6",
+                    inputDataValidate:"required",
+                    inputLabel: "Имя получателя",
+                  })
+                  @@include('components/form/input.html', {
+                    inputHolderClass:"",
+                    inputType: "text",
+                    inputClass: "",
+                    inputId: "input-7",
+                    inputDataValidate:"required",
+                    inputLabel: "Имя получателя",
+                  })                            
+                </div>
+
+                <div class="inputs-row row-4"> 
+                  @@include('components/form/input.html', {
+                    inputHolderClass:"col-2",
+                    inputType: "text",
+                    inputClass: "",
+                    inputId: "input-8",
+                    inputDataValidate:"required",
+                    inputLabel: "Имя получателя",
+                  }) 
+                  @@include('components/form/input.html', {
+                    inputHolderClass:"",
+                    inputType: "text",
+                    inputClass: "",
+                    inputId: "input-9",
+                    inputDataValidate:"required",
+                    inputLabel: "Имя получателя",
+                  })
+                  @@include('components/form/input.html', {
+                    inputHolderClass:"",
+                    inputType: "text",
+                    inputClass: "",
+                    inputId: "input-10",
+                    inputDataValidate:"required",
+                    inputLabel: "Имя получателя",
+                  })                
+                </div> 
+
+                <div class="inputs-row row-4 row-custom">               
+                  @@include('components/form/input.html', {
+                    inputHolderClass:"col-2",
+                    inputType: "text",
+                    inputClass: "",
+                    inputId: "input-11",
+                    inputDataValidate:"required",
+                    inputLabel: "Имя",
+                  }) 
+                  @@include('components/form/input.html', {
+                    inputHolderClass:"",
+                    inputType: "text",
+                    inputClass: "",
+                    inputId: "input-12",
+                    inputDataValidate:"required",
+                    inputLabel: "Имя",
+                  })
+                  @@include('components/form/input.html', {
+                    inputHolderClass:"",
+                    inputType: "text",
+                    inputClass: "",
+                    inputId: "input-13",
+                    inputDataValidate:"required",
+                    inputLabel: "Имя",
+                  })                       
+                </div> 
+
+                <h4>New input </h4>
+                <div class="inputs-row">
+                  @@include('components/form/input-test.html', {
+                    inputHolderClass:"",
+                    inputType: "text",
+                    inputClass: "input-new",
+                    inputId: "input-13",
+                    inputDataValidate:"required",
+                    inputLabel: "Имя",
+                  })
+                </div>
+              </form>
+            </div>            
+          </div>          
+        </div>
+
+        <!-- order -->
+        <div class="checkout-order order">
+          
+          <div class="order-top">
+              <div class="order-title">Ваш заказ
+              </div>
+              <div class="order-link">
+                <a href="#" class="link">Редактировать</a>
+              </div>
+          </div>
+
+          @@include('components/order-list.html')          
+
+          <div class="order-total">
+
+            @@include('components/checkout-promo.html') 
+
+            <div class="row-info">
+              <span class="info">Товаров 3 на сумму:</span>
+              <div class="val">18 099 грн</div>
+            </div>           
+
+            <div class="row-info">
+              <span class="info">Доставка</span>
+              <div class="val">бесплатно</div>
+            </div>
+
+            <div class="row-info">
+              <span class="info">Скидка</span>
+              <div class="val">0</div>
+            </div>
+
+            <div class="row-info row-total-info">
+              <span class="info">Итого:</span>
+              <div class="val">18 099 грн</div>
+            </div>           
+            
+          </div>
+
+          <div class="step-2-content">
+            <div class="order-btn">
+              <label for="checkout-form-btn" class="btn btn-primary btn-lg" id="oder-btn">
+                Оформить заказ
+              </label>
+            </div>
+            <div class="order-policy">
+              Подтверждая заказ вы соглашаетесь с
+              <a href="#">политикой конфиденциальности</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!--../container  -->
+  </main>
+  @@include('templates/footer-checkout.html')
+</body>
+</html>

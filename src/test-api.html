@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('templates/head.html')
+<body>
+  @@include('templates/header.html')
+  <main class="main">
+    <div class="container">
+      <h4 class="h3">
+        <a href="https://fakestoreapi.com/docs">https://fakestoreapi.com/docs</a>
+      </h4>
+      <div class="catalog-container horizontal">
+        <div id="product-list" class="product-list">
+        </div>   
+      </div>
+    </div>
+  </main>
+  <script>
+    // fetch('https://fakerapi.it/api/v1/books')
+    //         .then(res=>res.json())
+    //         .then(json=>console.log(json));
+
+    let dataList = document.getElementById('product-list');
+    fetch('https://fakestoreapi.com/products?limit=5')
+            .then(res=>res.json())
+            .then(function(data) {
+              for (var i = 0; i < data.length; i++) {
+                var listItem = document.createElement('div');
+                listItem.classList.add('product-item');
+                listItem.innerHTML = `<div class="product-img">
+                    <div class="product-label lbl-stock"><span>Акция</span></div>
+                    <span class="favorite active">
+                      <i class="icon-favorite"></i>
+                    </span>
+                    <a href="">
+                      <img src="${data[i].image}" alt="product">
+                    </a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-available available">
+                      <i class="icon-available"></i>
+                      <span>в наличии</span>
+                    </div>
+                    <div class="product-name">
+                      <a href="">${data[i].title}</a>
+                    </div>
+                    <div class="product-price">
+                      <div class="price">
+                        <div class="price-current">${data[i].price} грн</div>
+                      </div>
+                    </div>
+                    <div class="product-btn">
+                      <a href="" class="btn btn-primary btn-block" data-openmodal="modals/basket.html">В корзину</a>
+                    </div>
+                  </div>`;
+                dataList.appendChild(listItem);                
+            }
+      });
+  </script>
+  <style>
+    .product-img img {
+      width: 100%;
+      aspect-ratio: 1 / 1; 
+      max-height: 340px;     
+    }
+  </style>
+  @@include('templates/footer.html')
+</body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('templates/head.html')
+<body class="checkout-page">
+  @@include('templates/header-checkout.html')
+  <main class="main">
+    <div class="container checkout-container"> 
+
+      <div class="checkout-holder">
+        <div class="checkout-content">
+          <!--first-step  -->
+          <div class="checkout-step step-1 active">
+            <div class="checkout-step-title">
+              <span class="checkout-title">Ваши данные</span>
+              <a href="" class="link-edit">Редактировать</a>
+            </div>
+
+            <div class="checkout-step-content">
+              <div class="checkout-tab tab-holder">
+                <div class="tab-controls">
+                  <a href="#" class="active" data-tab="new-user">Я новый покупатель</a>
+                  <a href="#" class="" data-tab="user">Я постоянный клиент</a>
+                </div>
+  
+                <div class="checkout-tab-content">
+                  <div class="tab-content active" data-content="new-user">
+                    <!-- registration -->                    
+                    @@include('components/form/form-registration.html', {
+                      "btnText": "Продолжить"
+                      }
+                    )                                     
+                  </div>
+  
+                  <div class="tab-content" data-content="user">
+                    <!-- login form -->                   
+                    
+                    @@include('components/form/form-auth.html', {
+                      "btnText": "Продолжить"
+                      }
+                    )
+                  </div>
+                </div>
+              </div>              
+  
+              <div class="checkout-socials">
+                <span class="checkout-socials-text">Или войдите с помощью социальных сетей:</span>
+                <ul class="social-list">  
+                  <li class="social-item">
+                    <a href="" class="social-link">
+                      <span class="social-icon social-icon-fb">
+                        <i class="icon-fb"></i>
+                      </span>            
+                      <span>Facebook</span>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a href="" class="social-link">
+                      <span class="social-icon social-icon-google">
+                        <i class="icon-google"></i>
+                      </span>
+                      <span>Google</span>            
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="step-1-info">
+              <span>Константин</span>
+              <span>+38(093) 223 00 19</span>
+              <span>example@gmail.com</span>
+            </div>
+          </div>
+          
+
+          <!-- second-step -->
+          <div class="checkout-step step-2">            
+            <div class="checkout-step-title">
+              <span class="checkout-title">Доставка и оплата</span>
+            </div>
+
+            <div class="checkout-step-content">
+              <form method="post" action="" class="form_validate" id="orderForm">
+                <!-- delivery block -->
+                <div class="checkout-block">
+                  <div class="checkout-block-title">Выберите способ доставки</div>
+                  <div class="delivery-info tab-holder">
+                    <div class="tab-controls checkout-tab-controls">
+                      <div class="tab-link active" data-radio="delivery-1">
+                        <label class="radio-label">
+                          <input type="radio" name="delivery-type" checked class="js-radio input-radio" />
+                          <span class="checkout-radio-text">Самовывоз</span>
+                        </label>
+                      </div>
+                      <div class="tab-link" data-radio="delivery-2">
+                        <label class="radio-label">
+                          <input type="radio" name="delivery-type" class="js-radio input-radio" />
+                          <span class="checkout-radio-text">Курьером по адресу</span>
+                        </label>
+                      </div>
+                      <div class="tab-link" data-radio="delivery-3">
+                        <label class="radio-label">
+                          <input type="radio" name="delivery-type" class="js-radio input-radio" />
+                          <span class="checkout-radio-text">Новой Почты</span>
+                        </label>
+                      </div>
+                      <div class="tab-link" data-radio="delivery-4">
+                        <label class="radio-label">
+                          <input type="radio" name="delivery-type" class="js-radio input-radio" />
+                          <span class="checkout-radio-text"> Укрпочта </span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="tab-content active" data-section="delivery-1"> 
+                      @@include('components/form/input-autocomplete.html')  
+                      <div class="radio-holder">
+                        <div class="radio-row">
+                          <div class="radio">
+                            <label class="radio-label">
+                              <input type="radio" name="radio-1" checked class="radio-input">
+                              <span class="radio-text">Киев, ул. Леси Украинки 24</span>
+                            </label>
+                            <a href="#" 
+                            data-openmodal="modals/map.html" 
+                            class="js-toggle-map"
+                            data-gmaps_s="50.4707" data-gmaps_n="30.5182"
+                            >На карте</a>  
+                          </div>    
+                        </div> 
+                        <div class="radio-row">
+                          <div class="radio">
+                            <label class="radio-label">
+                              <input type="radio" name="radio-1" class="radio-input">
+                              <span class="radio-text">Киев, ЦУМ, Крещатик 38</span>
+                            </label>
+                            <a href="#" data-openmodal="modals/map.html" class="js-toggle-map" data-gmaps_s="50.4707" data-gmaps_n="30.5182">На карте</a> 
+                          </div>              
+                        </div> 
+                        <div class="radio-row">
+                          <div class="radio">
+                            <label class="radio-label">
+                              <input type="radio" name="radio-1" class="radio-input">
+                              <span class="radio-text">Киев, ТЦ «Мануфактура», Обуховское шоссе 2</span>
+                            </label>
+                            <a href="#" data-openmodal="modals/map.html" class="js-toggle-map" data-gmaps_s="50.4707" data-gmaps_n="30.5182">На карте</a> 
+                          </div>              
+                        </div>
+                      </div>
+                    </div> 
+
+                    <div class="tab-content" data-section="delivery-2">
+                      <div class="input-holder">
+                        <input type="text" class="input js-autocomplete" id="input-city-2" data-validate="required" data-source="file-list-cities.json">
+                        <label for="input-city-2" class="input-label">Город</label>
+                        <span class="clean-input js-clear-input"></span>
+                        <span class="error-text">Введите Город</span>
+                      </div> 
+                      <div class="delivery-row">                              
+                        <div class="input-holder  input-holder-m">
+                          <input type="text" class="input" id="street" data-validate="required-name">
+                          <label for="street" class="input-label">Улица</label>
+                          <span class="error-text">Введите Улица</span>
+                        </div>                              
+                        <div class="input-holder input-holder-sm">
+                          <input type="text" class="input" id="house" data-validate="required">
+                          <label for="house" class="input-label">Дом</label>
+                          <span class="error-text">Введите Дом</span>
+                        </div>
+                        <div class="input-holder input-holder-sm">
+                          <input type="text" class="input" id="appartament" data-validate="required">
+                          <label for="appartament" class="input-label">Кв.</label>
+                          <span class="error-text">Введите Кв.</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tab-content" data-section="delivery-3">  
+                      <div class="input-holder">
+                        <input type="text" class="input js-autocomplete" id="input-city-3" data-validate="required" data-source="file-list-cities.json">
+                        <label for="input-city-3" class="input-label">Город</label>
+                        <span class="clean-input js-clear-input"></span>
+                        <span class="error-text">Введите Город</span>
+                      </div> 
+                    </div>
+
+                    <div class="tab-content" data-section="delivery-4">  
+                      <div class="input-holder">
+                        <input type="text" class="input js-autocomplete" id="input-city-4" data-validate="required" data-source="file-list-cities.json">
+                        <label for="input-city-4" class="input-label">Город</label>
+                        <span class="clean-input js-clear-input"></span>
+                        <span class="error-text">Введите Город</span>
+                      </div> 
+                    </div> 
+                  
+                  </div>
+                </div>
+                
+
+                <!-- pay block -->
+                <div class="checkout-block">
+                  <div class="checkout-block-title">Выберите способ оплаты</div>
+                  <div class="tab-holder">
+                    <div class="tab-controls checkout-tab-controls">
+                      <div class="tab-link active" data-radio="pay-1">
+                        <label class="radio-label">
+                          <input type="radio" name="payment" checked class="js-radio input-radio" />
+                          <span class="checkout-radio-text">На счет Приватбанка </span>
+                        </label>
+                      </div>
+                      <div class="tab-link" data-radio="pay-2">
+                        <label class="radio-label">
+                          <input type="radio" name="payment" class="js-radio input-radio" />
+                          <span class="checkout-radio-text">Visa / MasterCard</span>
+                        </label>
+                      </div>
+                      <div class="tab-link" data-radio="pay-3">
+                        <label class="radio-label">
+                          <input type="radio" name="payment" class="js-radio input-radio" />
+                          <span class="checkout-radio-text">При получени</span>
+                        </label>
+                      </div>
+                    </div>               
+                    <div class="tab-content active" data-section="pay-1">
+                      Мы вышлем смс с реквизитами для оплаты
+                    </div>
+                    <div class="tab-content" data-section="pay-2">
+                      Вы будете перенаправлены на страницу оплаты
+                    </div>
+                    <div class="tab-content" data-section="pay-3">
+                      Оплата при получении
+                    </div>
+                  </div>
+                </div>                  
+
+                <!-- comment block -->
+                @@include('components/checkout-comment.html')
+
+                <div class="hide">
+                  <button type="submit" id="checkout-form-btn"></button>
+                </div>
+              </form>
+            </div>            
+          </div>          
+        </div>
+
+        <!-- order -->
+        <div class="checkout-order order">          
+          <div class="order-top">
+              <div class="order-title">Ваш заказ
+              </div>
+              <div class="order-link">
+                <a href="#" class="link">Редактировать</a>
+              </div>
+          </div>
+          @@include('components/order-list.html')         
+
+          <div class="order-total">
+
+            @@include('components/checkout-promo.html') 
+
+            <div class="row-info">
+              <span class="info">Товаров 3 на сумму:</span>
+              <div class="val">18 099 грн</div>
+            </div>           
+
+            <div class="row-info">
+              <span class="info">Доставка</span>
+              <div class="val">бесплатно</div>
+            </div>
+
+            <div class="row-info">
+              <span class="info">Скидка</span>
+              <div class="val">0</div>
+            </div>
+
+            <div class="row-info row-total-info">
+              <span class="info">Итого:</span>
+              <div class="val">18 099 грн</div>
+            </div>           
+            
+          </div>
+
+          <!-- <div class="step-2-content">
+            <div class="order-btn">
+              <label for="checkout-form-btn" class="btn btn-primary btn-lg" id="oder-btn">
+                Оформить заказ
+              </label>
+            </div>
+            <div class="order-policy">
+              Подтверждая заказ вы соглашаетесь с
+              <a href="#">политикой конфиденциальности</a>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      
+    </div><!--../container  -->
+  </main>
+  @@include('templates/footer-checkout.html')
+</body>
+</html>

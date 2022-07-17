@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('templates/head.html', {
+    "cssLink": "/css/content.css"
+    }
+  )
+  <body class="content-page">
+    @@include('templates/header.html')
+    <main class="main">
+      <div class="heading-section">
+        <div class="container">
+          @@include('components/content/breadcrumbs.html', {
+            title: 'О компании'
+          })
+        </div>
+      </div>
+      <div class="content-section">
+        <div class="container">
+          <div class="content-holder">
+            @@include('components/content/content-nav.html')
+            @@include('components/content/content-about.html')
+          </div>
+        </div>
+      </div>
+    </main>
+    @@include('templates/footer.html')
+  </body>
+</html>

@@ -1,0 +1,64 @@
+// Colors
+$white: #ffffff;
+$grey: #ebebeb;
+$light-grey: #828282;
+$light-grey2: #F2F3F4;
+$light-grey3: #F1EDEE;
+$dark-grey: #32343E;
+$black: #000000;
+$blue: #2B96D6;
+$blue-light: #41A8E5;
+$blue-dark: #0D486D;
+$orange: #F6731C;
+$orange-bright: #F98620;
+$orange-light: #F4AC62;
+$orange-dark: #EC7D08;
+$red: #DA4149;
+$green: rgb(33, 150, 83);
+
+$fontColor: $dark-grey;
+$linkColor: $blue-dark;
+$linkHover: $blue-light;
+$linkActive: $blue-dark;
+$filterNumColor: $light-grey;
+$btn: $blue-dark;
+$btnHover: $blue-light;
+$btnActive: $blue-dark;
+$stock: $red;
+$lineColor: $grey;
+$burgerColor: $blue-dark;
+$footerBg: $dark-grey;
+$oldPriceColor: $light-grey;
+$available: $green;
+$unavailable: $red;
+$lblStock: $orange;
+$lblNew: $green;
+$lblDiscount: $blue;
+$statusDone: #00933C;
+$statusCancel: $light-grey;
+$statusWait:#3C58BF;
+$statusNew: $orange;
+$statusAvailable: #219653;
+$paginationBorder:  #D9DADF;
+
+$btnSecondary: $orange-bright;
+$btnSecondaryHover: $orange-light;
+$btnSecondaryActive: $orange-dark;
+
+// Fonts
+$ftNotoSans: 'Noto Sans', sans-serif;
+
+$ftMuseoSansCyrl100: 'Museo Sans Cyrl 100', sans-serif;
+$ftMuseoSansCyrl300: 'Museo Sans Cyrl 300', sans-serif;
+$ftMuseoSansCyrl500: 'Museo Sans Cyrl 500', sans-serif;
+$ftMuseoSansCyrl700: 'Museo Sans Cyrl 700', sans-serif;
+$ftMuseoSansCyrl900: 'Museo Sans Cyrl 900', sans-serif;
+
+// Shadows
+$productShadow: 0px 3px 20px rgba(5, 18, 68, 0.1);
+
+// Bg
+$bgSection: $light-grey2;
+
+$turumPrimaryColor: #5824c3;
+$turumSecondaryColor: #bbfa40;

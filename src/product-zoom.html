@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+//= templates/head.html
+<body>
+  //= templates/header.html
+  <main class="main">
+    <div class="container">
+      <div class="title-section">
+        <div class="h1">Magiczoomplus</div>
+        <!-- <a href="https://www.magictoolbox.com/magiczoomplus/">https://www.magictoolbox.com/magiczoomplus/</a> -->
+      </div>
+      <div class="product-card-block">
+        @@include('components/product-gallery-zoom.html')
+        @@include('components/product-info-block.html')
+      </div>
+      <div class="title-section">
+        <div class="h1">Elevatezoom plus</div>
+        <!-- <a href="http://igorlino.github.io/elevatezoom-plus/">http://igorlino.github.io/elevatezoom-plus/</a> -->
+      </div>
+      <div class="product-card-block">
+        @@include('components/product-gallery-zoom-elevate.html')
+        @@include('components/product-info-block.html')
+      </div>
+      <!-- easy zoom -->
+      <div class="title-section">
+        <div class="h1">EasyZoom</div>
+        <!-- <a href="https://i-like-robots.github.io/EasyZoom/">https://i-like-robots.github.io/EasyZoom/</a> -->
+      </div>
+      <div class="product-card-block">
+        @@include('components/product-gallery-zoom-easy.html')
+        @@include('components/product-info-block.html')
+      </div>
+    </div>
+  </main>
+  //= templates/footer.html
+  <script type="text/javascript" src="https://fancyapps.com/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  <link rel="stylesheet" type="text/css" href="https://fancyapps.com/fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+</body>
+</html>

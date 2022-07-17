@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('templates/head.html', {
+    "cssLink": "/css/content.css"
+    }
+  )
+  <body class="content-page">
+    @@include('templates/header.html')
+    <main class="main">
+      <div class="content-section">
+        <div class="container">
+          <div class="city-dropdown dropdown dropdown-section">
+            <span class="dropdown-link dropdown-title">
+              <span>Ваш город <span class="link js-city-selected">Киев</span></span>
+              <i class="icon-dropdown-big"></i>
+            </span>
+            <div class="city-list-holder dropdown-box ">
+              <ul class="city-list scroll">
+                <li data-city-control="all" data-has-tab="true">Все</li>
+                <li data-city-control="1">Харьков</li>
+                <li data-city-control="2" data-has-tab="true" class="active">Киев</li>
+                <li data-city-control="3">Одесса</li>
+                <li data-city-control="4">Днепр</li>
+                <li data-city-control="5">Львов</li>
+                <li data-city-control="6">Винница</li>
+                <li data-city-control="7">Черкасы</li>
+                <li data-city-control="8">Чернигов</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="section-body" >
+
+            <div class="point-top-info js-top-info point-tab-holder" data-has-content="true">
+
+              <div class="point-tab-controls bg-section">              
+                <a href="" class="point-tab-control active" data-point-control="1">Healthy points</a>
+                <a href="" class="point-tab-control" data-point-control="2">Магазины партнеров</a>
+              </div> 
+
+              <div class="point-tab-contents">
+                <div class="content-text point-tab-content " data-point-content="1">
+                  Healthy points – это фирменные магазины YARO с полным ассортиментом продукции и прекрасным сервисом. Наши улыбчивые бариста всегда помогут вам с выбором и приготовят вкуснейшим напитки: от матча латте до гречишного чая.
+                </div>
+
+                <div class="point-tab-content hide" data-point-content="2">
+                  <div class="point-tab-info">
+                    <p>Гарантированное наличие только в точках Healthy Points или на сайте yaro.ua.</p>
+                    <div class="btn-holder">
+                      <a href="" class="btn btn-outline">Перейти в каталог</a>
+                    </div>                    
+                  </div>
+                </div>
+              </div>              
+            </div>
+
+            <div class="point-top-info hide js-top-info">
+              <div class="point-tab-info">
+                <p>Гарантированное наличие только в точках Healthy Points или на сайте yaro.ua.</p>
+                <div class="btn-holder">
+                  <a href="" class="btn btn-outline">Перейти в каталог</a>
+                </div>   
+              </div>
+            </div>
+            
+            <div class="point-tab-content">                            
+              <div class="content-block">
+                  <div class="content-block-left">
+                    <div class="point-list scroll">
+                      @@include('components/content/point-item.html', {
+                        class: 'active point-active',
+                        dataCity: '2',
+                        dataPoint: '1',
+                        mapS: '40.2212',
+                        mapN: '38.2653',
+                        title: 'YARO Healthy Point Lipki',
+                        link: '<a href="" class="link">Подробнее</a>',
+                        address: 'г. Киев, ул. Николая Гринченка 2/1',
+                        time: 'Пн-Вс (8:00-23:00)',
+                        phone: '093 324 3184',
+                        iconCup: '<i class="icon-cup"></i>',
+                      })
+                      @@include('components/content/point-item.html', {
+                        class: 'active',
+                        dataCity: '2',
+                        dataPoint: '1',
+                        mapS: '40.3212',
+                        mapN: '38.3653',
+                        title: 'Healthy Point YARO Protasov',
+                        link: '<a href="" class="link">Подробнее</a>',
+                        address: 'г. Киев, Гоголевская 22-24, Fizmat',
+                        time: 'Пн-Вс (8:00-23:00)',
+                        phone: '093 324 3184',
+                        iconCup: '<i class="icon-cup"></i>',
+                      })
+                      @@include('components/content/point-item.html', {
+                        class: 'active',
+                        dataCity: '2',
+                        dataPoint: '1',
+                        mapS: '40.1212',
+                        mapN: '38.1653',
+                        title: 'YARO Healthy Point Vladimirskaya',
+                        link: '<a href="" class="link">Подробнее</a>',
+                        address: 'г. Киев,  ул. Драгомирова, 12а (салон Backstage)',
+                        time: 'Пн-Вс (8:00-23:00)',
+                        phone: '093 324 3184',
+                        iconCup: '',
+                      })
+
+                      @@include('components/content/point-item.html', {
+                        class: '',
+                        dataCity: '2',
+                        dataPoint: '2',
+                        mapS: '40.3212',
+                        mapN: '38.3653',
+                        title: 'Сильпо',
+                        link: '',
+                        address: 'г. Киев, shop #1',
+                        time: 'Пн-Вс (8:00-23:00)',
+                        phone: '093 324 3184',
+                        iconCup: '<i class="icon-cup"></i>',
+                      })
+                      @@include('components/content/point-item.html', {
+                        class: '',
+                        dataCity: '2',
+                        dataPoint: '2',
+                        mapS: '40.1212',
+                        mapN: '38.1653',
+                        title: 'Le Silpo',
+                        link: '',
+                        address: 'г. Киев, shop #2',
+                        time: 'Пн-Вс (8:00-23:00)',
+                        phone: '093 324 3184',
+                        iconCup: '',
+                      })
+                      @@include('components/content/point-item.html', {
+                        class: '',
+                        dataCity: '2',
+                        dataPoint: '2',
+                        mapS: '40.3212',
+                        mapN: '38.3653',
+                        title: 'Сильпо',
+                        link: '',
+                        address: 'г. Киев, shop #1',
+                        time: 'Пн-Вс (8:00-23:00)',
+                        phone: '093 324 3184',
+                        iconCup: '<i class="icon-cup"></i>',
+                      })
+                      
+                      @@include('components/content/point-item.html', {
+                        class: '',
+                        dataCity: '1',
+                        dataPoint: '1',
+                        mapS: '40.4212',
+                        mapN: '38.4653',
+                        title: 'Healthy Point YARO',
+                        link: '<a href="" class="link">Подробнее</a>',
+                        address: 'г. Харьков, shop #1',
+                        time: 'Пн-Вс (8:00-23:00)',
+                        phone: '093 324 3184',
+                        iconCup: '<i class="icon-cup"></i>',
+                      })
+
+                      @@include('components/content/point-item.html', {
+                        class: '',
+                        dataCity: '1',
+                        dataPoint: '1',
+                        mapS: '40.5212',
+                        mapN: '38.5653',
+                        title: 'YARO Healthy Point',
+                        link: '<a href="" class="link">Подробнее</a>',
+                        address: 'г. Харьков, shop #2',
+                        time: 'Пн-Вс (8:00-23:00)',
+                        phone: '093 324 3184',
+                        iconCup: '',
+                      })
+
+                      @@include('components/content/point-item.html', {
+                        class: '',
+                        dataCity: '1',
+                        dataPoint: '1',
+                        mapS: '40.5212',
+                        mapN: '38.5653',
+                        title: 'YARO Healthy Point',
+                        link: '<a href="" class="link">Подробнее</a>',
+                        address: 'г. Харьков, shop #3',
+                        time: 'Пн-Вс (8:00-23:00)',
+                        phone: '093 324 3184',
+                        iconCup: '',
+                      })
+                      @@include('components/content/point-item.html', {
+                        class: '',
+                        dataCity: '1',
+                        dataPoint: '1',
+                        mapS: '40.5212',
+                        mapN: '38.5653',
+                        title: 'YARO Healthy Point',
+                        link: '<a href="" class="link">Подробнее</a>',
+                        address: 'г. Харьков, shop #4',
+                        time: 'Пн-Вс (8:00-23:00)',
+                        phone: '093 324 3184',
+                        iconCup: '',
+                      })
+
+                      @@include('components/content/point-item.html', {
+                        class: '',
+                        dataCity: '3',
+                        dataPoint: '1',
+                        mapS: '40.4212',
+                        mapN: '38.4653',
+                        title: 'Healthy Point YARO Protasov',
+                        link: '<a href="" class="link">Подробнее</a>',
+                        address: 'г. Одесса, shop #1',
+                        time: 'Пн-Вс (8:00-23:00)',
+                        phone: '093 324 3184',
+                        iconCup: '<i class="icon-cup"></i>',
+                      })
+                      @@include('components/content/point-item.html', {
+                        class: '',
+                        dataCity: '3',
+                        dataPoint: '1',
+                        mapS: '40.5212',
+                        mapN: '38.5653',
+                        title: 'YARO Healthy Point Vladimirskaya',
+                        link: '<a href="" class="link">Подробнее</a>',
+                        address: 'г. Одесса, shop #2',
+                        time: 'Пн-Вс (8:00-23:00)',
+                        phone: '093 324 3184',
+                        iconCup: '',
+                      })
+
+
+                      @@include('components/content/point-item.html', {
+                        class: '',
+                        dataCity: '4',
+                        dataPoint: '1',
+                        mapS: '40.4212',
+                        mapN: '38.4653',
+                        title: 'Healthy Point YARO Protasov',
+                        link: '<a href="" class="link">Подробнее</a>',
+                        address: 'г. Днепр, shop #1',
+                        time: 'Пн-Вс (8:00-23:00)',
+                        phone: '093 324 3184',
+                        iconCup: '<i class="icon-cup"></i>',
+                      })
+                      @@include('components/content/point-item.html', {
+                        class: '',
+                        dataCity: '4',
+                        dataPoint: '1',
+                        mapS: '40.5212',
+                        mapN: '38.5653',
+                        title: 'YARO Healthy Point Vladimirskaya',
+                        link: '<a href="" class="link">Подробнее</a>',
+                        address: 'г. Днепр, shop #2',
+                        time: 'Пн-Вс (8:00-23:00)',
+                        phone: '093 324 3184',
+                        iconCup: '',
+                      })
+
+                      
+                      @@include('components/content/point-item.html', {
+                        class: '',
+                        dataCity: '5',
+                        dataPoint: '1',
+                        mapS: '40.4212',
+                        mapN: '38.4653',
+                        title: 'Healthy Point YARO Protasov',
+                        link: '<a href="" class="link">Подробнее</a>',
+                        address: 'г. Львов, shop #1',
+                        time: 'Пн-Вс (8:00-23:00)',
+                        phone: '093 324 3184',
+                        iconCup: '<i class="icon-cup"></i>',
+                      })
+                      @@include('components/content/point-item.html', {
+                        class: '',
+                        dataCity: '5',
+                        dataPoint: '1',
+                        mapS: '40.5212',
+                        mapN: '38.5653',
+                        title: 'YARO Healthy Point Vladimirskaya',
+                        link: '<a href="" class="link">Подробнее</a>',
+                        address: 'г. Львов, shop #2',
+                        time: 'Пн-Вс (8:00-23:00)',
+                        phone: '093 324 3184',
+                        iconCup: '',
+                      })
+
+                      
+                      
+                      @@include('components/content/point-item.html', {
+                        class: '',
+                        dataCity: '6',
+                        dataPoint: '1',
+                        mapS: '40.4212',
+                        mapN: '38.4653',
+                        title: 'Healthy Point YARO Protasov',
+                        link: '<a href="" class="link">Подробнее</a>',
+                        address: 'г. Винница, shop #1',
+                        time: 'Пн-Вс (8:00-23:00)',
+                        phone: '093 324 3184',
+                        iconCup: '<i class="icon-cup"></i>',
+                      })
+                      @@include('components/content/point-item.html', {
+                        class: '',
+                        dataCity: '6',
+                        dataPoint: '1',
+                        mapS: '40.5212',
+                        mapN: '38.5653',
+                        title: 'YARO Healthy Point Vladimirskaya',
+                        link: '<a href="" class="link">Подробнее</a>',
+                        address: 'г. Винница, shop #2',
+                        time: 'Пн-Вс (8:00-23:00)',
+                        phone: '093 324 3184',
+                        iconCup: '',
+                      })
+
+                      @@include('components/content/point-item.html', {
+                        class: '',
+                        dataCity: '7',
+                        dataPoint: '1',
+                        mapS: '40.4212',
+                        mapN: '38.4653',
+                        title: 'Healthy Point YARO Protasov',
+                        link: '<a href="" class="link">Подробнее</a>',
+                        address: 'г. Черкасы, shop #1',
+                        time: 'Пн-Вс (8:00-23:00)',
+                        phone: '093 324 3184',
+                        iconCup: '<i class="icon-cup"></i>',
+                      })
+                      @@include('components/content/point-item.html', {
+                        class: '',
+                        dataCity: '7',
+                        dataPoint: '1',
+                        mapS: '40.5212',
+                        mapN: '38.5653',
+                        title: 'YARO Healthy Point Vladimirskaya',
+                        link: '<a href="" class="link">Подробнее</a>',
+                        address: 'г. Черкасы, shop #2',
+                        time: 'Пн-Вс (8:00-23:00)',
+                        phone: '093 324 3184',
+                        iconCup: '',
+                      })
+
+                      
+                      @@include('components/content/point-item.html', {
+                        class: '',
+                        dataCity: '8',
+                        dataPoint: '1',
+                        mapS: '40.4212',
+                        mapN: '38.4653',
+                        title: 'Healthy Point YARO Protasov',
+                        link: '<a href="" class="link">Подробнее</a>',
+                        address: 'г. Чернигов, shop #1',
+                        time: 'Пн-Вс (8:00-23:00)',
+                        phone: '093 324 3184',
+                        iconCup: '<i class="icon-cup"></i>',
+                      })
+                    </div> 
+                  </div>
+                  <div class="content-block-right">
+                    <div class="map-holder" id="map" data-gmaps-s="49.994507" data-gmaps-n="36.14574"></div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="content-info">
+              <p>Мы не можем гарантировать наличие товаров в точках партнеров. Однако, вы всегда можете оформить заказ с бесплатной доставкой на сайте.</p>
+              <a href="" class="btn btn-primary">Оформить заказ на сайте</a>
+            </div> 
+            
+          </div>
+        </div>
+      </div>
+    </main>
+    <script async defer 
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0DxMMYRhqIFoFb4io4uzMqOk29kSaNso&amp;callback=initMap"></script>
+    @@include('templates/footer.html')
+  </body>
+</html>
